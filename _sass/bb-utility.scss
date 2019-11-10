@@ -1,0 +1,21 @@
+.bb-vh-40 {
+  height: 40vh;
+}
+.bb-vh-20 {
+  height: 20vh;
+}
+
+@media (min-width: 992px){
+  .bb-w-lg-25 {
+    width: 25%;
+  }
+  .bb-w-lg-50 {
+    width: 50%;
+  }
+
+}
+@media (max-width: 992px){
+  .bb-vh-sm-60 {
+      height: 60vh;
+  }
+}

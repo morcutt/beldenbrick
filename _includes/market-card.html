@@ -1,0 +1,33 @@
+
+        <div class="card {{ include.class }}">
+          <svg viewBox="0 0 489 344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+              <pattern id="{{ include.imgID }}" patternUnits="userSpaceOnUse" width="600" height="450">
+                  <image xlink:href="{{ include.image }}" x="0" y="0" width="100%" height="100%"/><!-- Image from http://silviahartmann.com/background-tile/6-grass-meadow-tile.php-->
+              </pattern>
+              <path d="M485.999246,53.4210665 L486,341.72595 L3.97903932e-13,341.72595 L0.00133227143,55.2044574 C33.2278201,48.4021801 61.6125286,28.3104051 79.3589584,0.725631904 L411.062943,0.728035483 C428.116796,26.8073715 454.767148,46.0432998 485.999246,53.4210665 Z" id="path-1"></path>
+            </defs>
+            <g id="Page-2" stroke="none" stroke-width="1" fill="url(#{{ include.imgID }})" fill-rule="evenodd">
+              <g id="Comercial-Copy" transform="translate(1.000000, 1.000000)">
+                <g id="BeldInd817001" transform="translate(0.725950, 0.000000)">
+                  <mask id="mask-2" >
+                    <use xlink:href="#path-1"></use>
+                  </mask>
+                  <path stroke="#979797" d="M486.499244,53.0254171 L486.500001,342.22595 L-0.500002325,342.22595 L-0.498665831,54.7964488 L-0.0989500443,54.7146172 C32.5370536,48.0332265 61.0057007,28.3295128 78.9384618,0.455109007 L79.0860953,0.225629927 L411.333398,0.228037443 L411.481414,0.454388562 C428.688395,26.7678949 455.395438,45.677956 486.114194,52.9344589 L486.499244,53.0254171 Z"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <div class="card-body">
+            <h2 class="card-title text-center">{{ include.content }}</h2>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="d-flex flex-column justify-content-center align-items-center flex-lg-row">
+              <a href="#" class="btn btn-secondary my-3">Learn More</a>
+              <ul>
+                {{ include.links }}
+              </ul>
+            </div>
+
+
+          </div>
+        </div>

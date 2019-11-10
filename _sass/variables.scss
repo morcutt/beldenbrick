@@ -1,7 +1,28 @@
-$white:    #fff;
-$red:     #dc3545;
-$body-bg: $red;
-$body-color: $white;
+$blue:    #6294A9;
+//$indigo:  #6610f2 !default;
+// $purple:  #6f42c1 !default;
+// $pink:    #e83e8c !default;
+$red:     #BB1215;
+//$orange:  #fd7e14 !default;
+//$yellow:  #ffc107 !default;
+//$green:   #28a745 !default;
+//$teal:    #20c997 !default;
+//$cyan:    #17a2b8 !default;
+$tan: #ECECE4;
+
+
+$primary: $red;
+$secondary: $tan;
+$link-color: $blue;
+
 
 /* custom vars */
-$custom-font-size: 60px;
+//$custom-font-size: 60px;
+$steel-green: #646c6c;
+$deep-purple: #2c2c34;
+$deep-steel: rgba(44, 53, 57, 1);
+$deep-steel-alpha-50: rgba(44, 53, 57, .5);
+
+$theme-colors: (
+  "dark": $deep-steel
+);

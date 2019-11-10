@@ -1,0 +1,129 @@
+.bb-market {
+  background: none;
+  border: none;
+  transition: all .5s ease-in-out;
+  .card-body {
+    background: $white;
+    border: 1px solid $gray-500;
+  }
+}
+.bb-market:hover {
+  box-shadow: 0rem 3rem 3rem rgba(0,0,0,.1);
+  transform: scale(1.02);
+}
+.bb-featured {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.bb-featured-dummy {
+  margin-top: 600%;
+}
+.bb-featured-display {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.bb-featured-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 1rem;
+  grid-template-areas:
+      "item-1"
+      "item-2"
+      "item-3"
+      "item-4"
+      "item-5"
+      "item-6"
+      "item-7"
+      "item-8"
+}
+.bb-featured-item {
+  > div {
+    position: relative;
+    overflow: hidden;
+    .img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: all 1s ease-in-out;
+    }
+    .card-img-overlay {
+      // top: 0;
+      // bottom: auto;
+      background: linear-gradient(180deg, rgba(44,44,52,.7) 30%, rgba(44,44,52,0) 60%);
+      transition: all .5s ease-out;
+      text-shadow: 0 0 .1rem #000;
+
+    }
+    &:hover {
+      .img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.bb-featured-item-1 {
+  grid-area: item-1;
+}
+.bb-featured-item-2 {
+  grid-area: item-2;
+}
+.bb-featured-item-3 {
+  grid-area: item-3;
+}
+.bb-featured-item-4 {
+  grid-area: item-4;
+}
+.bb-featured-item-5 {
+  grid-area: item-5;
+}
+.bb-featured-item-6 {
+  grid-area: item-6;
+}
+.bb-featured-item-7 {
+  grid-area: item-7;
+}
+.bb-featured-item-8 {
+  grid-area: item-8;
+}
+
+@media (min-width: 576px){
+  .bb-featured-dummy {
+    margin-top: 350%;
+  }
+  .bb-featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        "item-1 item-1"
+        "item-2 item-2"
+        "item-3 item-4"
+        "item-3 item-4"
+        "item-5 item-5"
+        "item-6 item-6"
+        "item-7 item-8"
+        "item-7 item-8";
+    grid-gap: 1rem;
+  }
+}
+@media (min-width: 992px){
+  .bb-featured-dummy {
+    margin-top: 100%;
+  }
+  .bb-featured-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "item-1 item-1 item-2 item-3"
+        "item-4 item-4 item-2 item-3"
+        "item-5 item-6 item-7 item-7"
+        "item-5 item-6 item-8 item-8";
+    grid-gap: 1rem;
+  }
+}

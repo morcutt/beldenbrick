@@ -1,0 +1,71 @@
+.bb-logo {
+  width: $spacer * 8;
+  fill: $primary;
+  transition: all .2s ease-out;
+}
+
+@media (min-width: 992px){
+  .bb-logo {
+    width: $spacer * 13;
+    margin-top: -$spacer/2;
+    fill: $gray-600;
+    &.bb-logo-start {
+      width: $spacer * 15;
+      margin-top: -$spacer * 1.5;
+      fill: $primary;
+    }
+  }
+  .bb-navbar {
+    background-color: rgba(255,255,255,.9) !important;
+    z-index: 16;
+    border-bottom: 1px solid #333;
+    .input-group {
+      input {
+          background: transparent;
+          color: $white;
+      }
+    }
+  }
+  .bb-navbar-aside {
+    font-size: $font-size-sm;
+    background-color: rgba(255,255,255,.9) !important;
+    z-index: 16;
+  }
+  .bb-navbar,
+  .bb-navbar-aside {
+    transition: all .2s ease-out;
+    &.bb-navbar-start {
+      background-color: rgba(0,0,0,.4) !important;
+      color: #fff;
+      border-bottom: 0;
+      a.nav-link {
+        color: $gray-400;
+        &:hover {
+          color: $gray-500;
+        }
+      }
+      .active > a.nav-link {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .bb-logo {
+    width: $spacer * 12;
+    margin-top: -$spacer/3;
+    fill: $gray-600;
+    &.bb-logo-start {
+      width: $spacer * 20;
+      margin-top: $spacer * -2.7;
+      fill: $primary;
+    }
+  }
+  .bb-navbar {
+    font-size: $font-size-lg;
+    .input-group {
+      width: $spacer * 19;
+    }
+  }
+}

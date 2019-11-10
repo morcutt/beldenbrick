@@ -3,11 +3,24 @@
 
 @import "variables";
 @import "bootstrap/scss/bootstrap";
+@import "bb-utility";
+@import "bb-navbar";
+@import "bb-hero";
+@import "bb-markets";
+@import "bb-featured";
+@import "bb-footer";
 
-.content {
-    font-size: $custom-font-size; //using custom variable 
+
+.bb-ambient-paver {
+  background: url('/assets/images/ambient-paver.svg');
+  background-size: cover;
+  background-position: center -8rem;
+  background-repeat: repeat-y;
+  // perspective: 2px;
+  background-attachment: fixed;
+  // transform: scale(1.1);
 }
 
-.primarycolor{
-    color: $primary; //using Bootstrap variable
+@media (min-width: 992px){
+
 }

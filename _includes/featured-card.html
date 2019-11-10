@@ -1,0 +1,20 @@
+
+        <div class="text-white h-100" ">
+          {% if include.brick == "horizontal" %}
+          <div class="img" style="background-image:url('{{ include.image }}');"></div>
+          <div class="card-img-overlay">
+            <h3 class="card-title">{{ include.title }}</h3>
+            <div class="d-flex flex-column flex-lg-row align-items-start">
+              <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
+              <a href="#" class="btn btn-secondary text-nowrap">Explore {{ include.title }}</a>
+            </div>
+          </div>
+          {% endif %}
+          {% if include.brick == "vertical" %}
+          <div class="img" style="background-image:url('{{ include.image }}');"></div>
+          <div class="card-img-overlay">
+            <h4 class="card-title">{{ include.title }}</h4>
+            <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
+          </div>
+          {% endif %}
+        </div>

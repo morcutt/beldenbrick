@@ -9,27 +9,9 @@
 </head>
 
 	<body>
-		    <nav id="bb-navbar-aside" class="navbar navbar-expand-lg navbar-light bg-light pb-0 bb-navbar-aside bb-navbar-start">
-      <div class="navbar-collapse collapse" id="">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Distributor Login</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="bb-navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light pt-lg-4 pb-lg-4 bb-navbar bb-navbar-start">
+		    <nav id="bb-navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light bb-navbar bb-navbar-start">
       <a href="#" class="navbar-brand py-0 mr-0" href="#">
-        <svg id="bb-logo" class="bb-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.9 114.8" style="enable-background:new 0 0 460.9 114.8;" xml:space="preserve">
+        <svg id="bb-logo" class="bb-logo bb-logo-start" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.9 114.8" style="enable-background:new 0 0 460.9 114.8;" xml:space="preserve">
         	<g>
         		<path class="st0" d="M69.9,56.8c0.1,0.1,0.3,0.2,0.4,0.3c9.3,3.5,14.3,10.4,15.8,20c1.1,7.3,0.3,14.5-2.9,21.2
         			c-3.8,8-10.6,12.3-18.8,14.6c-5.2,1.5-10.6,2-16,2c-15.5,0.1-31.1,0-46.6,0.1c-1.3,0-1.8-0.3-1.8-1.7C0,78.9,0,44.6,0,10.4
@@ -123,6 +105,7 @@
       </button>
 
       <div class="navbar-collapse collapse" id="navbarColor01">
+        <hr class="bb-navbar-divider" />
         <ul class="navbar-nav ml-auto mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Bricks <span class="sr-only">(current)</span></a>
@@ -140,6 +123,7 @@
             <a class="nav-link" href="#">Find a Distributor</a>
           </li>
         </ul>
+        <hr class="bb-navbar-divider" />
         <form class="form-inline">
           <div class="input-group input-group">
             <input type="text" class="form-control" placeholder="Search color, texture, size…" aria-label="Search Catalog" aria-describedby="button-addon2">
@@ -148,10 +132,28 @@
             </div>
           </div>
         </form>
+        <hr class="bb-navbar-divider" />
+        <div class="bb-navbar-aside">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Distributor Login</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="bb-navbar-divider" />
       </div>
     </nav>
 
-		        <div class="bb-product-hero">
+		        <div class="bb-hero bb-product-hero">
         <div class="bb-product-hero-inner h-100">
           <div class="bb-product-hero-img h-100" style="background-image:url('/assets/images/hero/admiralredfullrange-nutmeg-sienna-wheatfield.JPG');">
           </div>
@@ -160,72 +162,263 @@
 
   <div class="bb-ambient-paver">
     <div class="container-fluid" >
-      <div class="row">
-        <div class="col-2">
-          <!-- <div class="accordion" id="accordionExample"> -->
-  <div class="card mb-4">
-    <div class="card-header" id="headingOne">
-      <a href="#" class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bricks</a>
+      <div class="bb-products">
+        <div class="bb-product-facet-area">
+          
+  <button class="btn btn-primary bb-facet-nav" type="button" data-toggle="collapse" data-target="#bb-facet-nav" aria-expanded="false" aria-controls="bb-facet-nav"><i class="fa fa-filter"></i> Filter </button>
+  <div class="collapse" id="bb-facet-nav">
+    <div class="card mb-4 product-facet">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <a href="#" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bricks <i class="fa fa-angle-up fa-lg float-right mt-1"></i></a>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">Face</a>
+          <a href="#" class="list-group-item list-group-item-action">Face</a>
+          <a href="#" class="list-group-item list-group-item-action">Oversized</a>
+          <a href="#" class="list-group-item list-group-item-action">Structural</a>
+          <a href="#" class="list-group-item list-group-item-action active">Pavers</a>
+          <a href="#" class="list-group-item list-group-item-action">Special Shapes</a>
+          <a href="#" class="list-group-item list-group-item-action">Glazed</a>
+        </div>
+      </div>
     </div>
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"><a href="#">Face</a></li>
-        <li class="list-group-item"><a href="#">Thin</a></li>
-        <li class="list-group-item"><a href="#">Oversized</a></li>
-        <li class="list-group-item"><a href="#">Structural</a></li>
-        <li class="list-group-item"><a href="#">Pavers</a></li>
-        <li class="list-group-item"><a href="#">Special Shapes</a></li>
-        <li class="list-group-item"><a href="#">Glazed</a></li>
-      </ul>
+    <div class="card mb-4 product-facet">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <a href="#" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Colors <i class="fa fa-angle-up fa-lg float-right mt-1"></i></a>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="">
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">White</a>
+          <a href="#" class="list-group-item list-group-item-action">Gray</a>
+          <a href="#" class="list-group-item list-group-item-action active">Tan</a>
+          <a href="#" class="list-group-item list-group-item-action">Buff</a>
+          <a href="#" class="list-group-item list-group-item-action">Pink</a>
+          <a href="#" class="list-group-item list-group-item-action">Red</a>
+          <a href="#" class="list-group-item list-group-item-action">Brown</a>
+          <a href="#" class="list-group-item list-group-item-action">Black</a>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-4 product-facet">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <a href="#" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Sizes <i class="fa fa-angle-up fa-lg float-right mt-1"></i></a>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="">
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">White</a>
+          <a href="#" class="list-group-item list-group-item-action">Gray</a>
+          <a href="#" class="list-group-item list-group-item-action active">Tan</a>
+          <a href="#" class="list-group-item list-group-item-action">Buff</a>
+          <a href="#" class="list-group-item list-group-item-action">Pink</a>
+          <a href="#" class="list-group-item list-group-item-action">Red</a>
+          <a href="#" class="list-group-item list-group-item-action">Brown</a>
+          <a href="#" class="list-group-item list-group-item-action">Black</a>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-4 product-facet">
+      <div class="card-header" id="headingFour">
+        <h2 class="mb-0">
+          <a href="#" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Texture <i class="fa fa-angle-up fa-lg float-right mt-1"></i></a>
+        </h2>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="">
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">White</a>
+          <a href="#" class="list-group-item list-group-item-action">Gray</a>
+          <a href="#" class="list-group-item list-group-item-action active">Tan</a>
+          <a href="#" class="list-group-item list-group-item-action">Buff</a>
+          <a href="#" class="list-group-item list-group-item-action">Pink</a>
+          <a href="#" class="list-group-item list-group-item-action">Red</a>
+          <a href="#" class="list-group-item list-group-item-action">Brown</a>
+          <a href="#" class="list-group-item list-group-item-action">Black</a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="card mb-4">
-    <div class="card-header" id="headingOne">
-      <a href="#" class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseZero">Colors</a>
-    </div>
-    <div id="collapseZero" class="collapse show" aria-labelledby="headingOne" data-parent="">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"><a href="#">White</a></li>
-        <li class="list-group-item"><a href="#">Cream</a></li>
-        <li class="list-group-item"><a href="#">Gray</a></li>
-        <li class="list-group-item"><a href="#">Tan</a></li>
-        <li class="list-group-item"><a href="#">Buff</a></li>
-        <li class="list-group-item"><a href="#">Pink</a></li>
-        <li class="list-group-item"><a href="#">Red</a></li>
-        <li class="list-group-item"><a href="#">Brown</a></li>
-        <li class="list-group-item"><a href="#">Black</a></li>
-      </ul>
+
+        </div>
+        <nav class="bb-breadcrumb-area" aria-label="breadcrumb">
+
+        </nav>
+        <div class="bb-product-desc-area">
+          <div>
+            <img src="/assets/images/products/pavers.jpg" alt="" class="img-fluid ml-3 mb-3 float-right">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+            <h1>Pavers</h1>
+            <p>Welcome to the Belden Brick Pavers Catalog. Whether your project includes a brick patio, walkway, driveway, or even an entire streetscape, we have a wide variety of clay pavers that will suit every need from residential paving to high strength industrial and commercial applications. Clay brick pavers exceed concrete pavers in durability, color selection, and they remain colorfast for generations. Learn more about our wide array of colors, sizes, and technical specifications.</p>
+            <h3>Tan Bricks</h3>
+            <p>Tan bricks offer a similar look to some of the lighter varieties of brick, but with more color saturation. They go well with almost every color scheme, which makes it easy to suit your specific taste. Just about every style of architecture looks good made with tan bricks, both modern and traditional.</p>
+          </div>
+        </div>
+        <div class="bb-product-list-area">
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+        </div>
+        <div class="bb-product-gallery">
+          
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+          
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+          <a href="#" class="btn btn-secondary">View Gallery</a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="card mb-4">
-    <div class="card-header" id="headingTwo">
-      <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Sizes</a>
+
+
+
+  <!-- <div class="bb-ambient-paver">
+    <div class="container-fluid" >
+      <div class="row py-5">
+        <div class="col-md-2">
+          
+  <button class="btn btn-primary bb-facet-nav" type="button" data-toggle="collapse" data-target="#bb-facet-nav" aria-expanded="false" aria-controls="bb-facet-nav"><i class="fa fa-filter"></i> Filter </button>
+  <div class="collapse" id="bb-facet-nav">
+    <div class="card mb-4 product-facet">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <a href="#" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Bricks <i class="fa fa-angle-up fa-lg float-right mt-1"></i></a>
+        </h2>
+      </div>
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="">
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">Face</a>
+          <a href="#" class="list-group-item list-group-item-action">Face</a>
+          <a href="#" class="list-group-item list-group-item-action">Oversized</a>
+          <a href="#" class="list-group-item list-group-item-action">Structural</a>
+          <a href="#" class="list-group-item list-group-item-action active">Pavers</a>
+          <a href="#" class="list-group-item list-group-item-action">Special Shapes</a>
+          <a href="#" class="list-group-item list-group-item-action">Glazed</a>
+        </div>
+      </div>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-      </ul>
+    <div class="card mb-4 product-facet">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <a href="#" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Colors <i class="fa fa-angle-up fa-lg float-right mt-1"></i></a>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="">
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">White</a>
+          <a href="#" class="list-group-item list-group-item-action">Gray</a>
+          <a href="#" class="list-group-item list-group-item-action active">Tan</a>
+          <a href="#" class="list-group-item list-group-item-action">Buff</a>
+          <a href="#" class="list-group-item list-group-item-action">Pink</a>
+          <a href="#" class="list-group-item list-group-item-action">Red</a>
+          <a href="#" class="list-group-item list-group-item-action">Brown</a>
+          <a href="#" class="list-group-item list-group-item-action">Black</a>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-4 product-facet">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <a href="#" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Sizes <i class="fa fa-angle-up fa-lg float-right mt-1"></i></a>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="">
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">White</a>
+          <a href="#" class="list-group-item list-group-item-action">Gray</a>
+          <a href="#" class="list-group-item list-group-item-action active">Tan</a>
+          <a href="#" class="list-group-item list-group-item-action">Buff</a>
+          <a href="#" class="list-group-item list-group-item-action">Pink</a>
+          <a href="#" class="list-group-item list-group-item-action">Red</a>
+          <a href="#" class="list-group-item list-group-item-action">Brown</a>
+          <a href="#" class="list-group-item list-group-item-action">Black</a>
+        </div>
+      </div>
+    </div>
+    <div class="card mb-4 product-facet">
+      <div class="card-header" id="headingFour">
+        <h2 class="mb-0">
+          <a href="#" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Texture <i class="fa fa-angle-up fa-lg float-right mt-1"></i></a>
+        </h2>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="">
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action">White</a>
+          <a href="#" class="list-group-item list-group-item-action">Gray</a>
+          <a href="#" class="list-group-item list-group-item-action active">Tan</a>
+          <a href="#" class="list-group-item list-group-item-action">Buff</a>
+          <a href="#" class="list-group-item list-group-item-action">Pink</a>
+          <a href="#" class="list-group-item list-group-item-action">Red</a>
+          <a href="#" class="list-group-item list-group-item-action">Brown</a>
+          <a href="#" class="list-group-item list-group-item-action">Black</a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="card mb-4">
-    <div class="card-header" id="headingThree">
-      <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Textures</a>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Morbi leo risus</li>
-        <li class="list-group-item">Porta ac consectetur ac</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-      </ul>
-    </div>
-  </div>
-<!-- </div> -->
 
         </div>
         <div class="col">
@@ -236,185 +429,143 @@
             </ol>
           </nav>
           <div>
-            <div class="media">
-              <div class="media-body">
-                <h1>Pavers</h1>
-                <p>Welcome to the Belden Brick Pavers Catalog. Whether your project includes a brick patio, walkway, driveway, or even an entire streetscape, we have a wide variety of clay pavers that will suit every need from residential paving to high strength industrial and commercial applications. Clay brick pavers exceed concrete pavers in durability, color selection, and they remain colorfast for generations. Learn more about our wide array of colors, sizes, and technical specifications.</p>
+            <img src="/assets/images/products/pavers.jpg" alt="" class="img-fluid ml-3 mb-3 float-right">
+            <h1>Pavers</h1>
+            <p>Welcome to the Belden Brick Pavers Catalog. Whether your project includes a brick patio, walkway, driveway, or even an entire streetscape, we have a wide variety of clay pavers that will suit every need from residential paving to high strength industrial and commercial applications. Clay brick pavers exceed concrete pavers in durability, color selection, and they remain colorfast for generations. Learn more about our wide array of colors, sizes, and technical specifications.</p>
+            <h3>Tan Bricks</h3>
+            <p>Tan bricks offer a similar look to some of the lighter varieties of brick, but with more color saturation. They go well with almost every color scheme, which makes it easy to suit your specific taste. Just about every style of architecture looks good made with tan bricks, both modern and traditional.</p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+</div>
+
+          </div>
+          <div class="d-flex flex-column text-center py-5">
+            
+        <h2>Find a Distributor Near You</h2>
+        <form class="form-inline justify-content-center my-4">
+          <div class="input-group input-group-lg mw-100">
+            <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Search Catalog" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+        <p>Lorem ipsum dolor sit amet, nec facer clita et, eos diam altera eruditi ut, platonem dissentias est ne. Nibh tantas pericula cu per. Has ea molestie liberavisse, eu sumo harum tantas eum. Mei te reque philosophia. Sed mutat diceret</p>
+
+          </div>
+        </div>
+        <div class="col-md-3">
+          
+        <h2>Find a Distributor Near You</h2>
+        <form class="form-inline justify-content-center my-4">
+          <div class="input-group input-group-lg mw-100">
+            <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Search Catalog" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+        <p>Lorem ipsum dolor sit amet, nec facer clita et, eos diam altera eruditi ut, platonem dissentias est ne. Nibh tantas pericula cu per. Has ea molestie liberavisse, eu sumo harum tantas eum. Mei te reque philosophia. Sed mutat diceret</p>
+
+          
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+          
+        <div class="card" >
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+          <a href="#" class="btn btn-secondary">View Gallery</a>
+          
+        <h2>Find a Building Using Belden Brick Near You</h2>
+        <p>Lorem ipsum dolor sit amet, nec facer clita et, eos diam altera eruditi ut, platonem dissentias est ne. Nibh tantas pericula cu per. Has ea molestie liberavisse, eu sumo harum tantas eum. Mei te reque philosophia. Sed mutat diceret</p>
+        <form class="form-inline justify-content-center my-4">
+          <div class="row">
+            <div class="col-auto">
+              <div class="input-group mw-100">
+                <div class="mr-3 mt-3">Access current location</div>
+                  <button class="btn btn-primary btn-lg" type="button" id="button-addon2"><i class="fa fa-map-marker"></i></button>
               </div>
-              <img src="/assets/images/products/pavers.jpg" alt="" class="img-fluid ml-3">
             </div>
-            <div>
-              <h2>Tan Bricks</h2>
-              <p>Tan bricks offer a similar look to some of the lighter varieties of brick, but with more color saturation. They go well with almost every color scheme, which makes it easy to suit your specific taste. Just about every style of architecture looks good made with tan bricks, both modern and traditional.</p>
+            <div class="col-auto">
+              <div class="h3 mt-2 text-center">or</div>
             </div>
-          </div>
-          <div class="container-fluid py-5">
-  <div class="d-flex">
-    <div class="bb-featured px-3 py-3 w-100 bb-vh-20">
-      
-        <div class="text-white h-100" ">
-          
-          
-        </div>
-
-    </div>
-  </div>
-  <div class="d-flex flex-column flex-lg-row">
-    <div class="bb-w-lg-50">
-      <div class="bb-featured px-3 py-3 w-100 bb-vh-40 bb-vh-sm-60">
-        <div class="text-white h-100" ">
-          
-          <div class="img" style="background-image:url('/assets/images/featured/BeldenBelcrest530--47.jpg');"></div>
-          <div class="card-img-overlay">
-            <h3 class="card-title">Pavers</h3>
-            <div class="d-flex flex-column flex-lg-row align-items-start">
-              <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
-              <a href="#" class="btn btn-secondary text-nowrap">Explore Pavers</a>
-            </div>
-          </div>
-          
-          
-        </div>
-</div>
-      <div class="bb-featured px-3 py-3 w-100 bb-vh-40 bb-vh-sm-60">
-        <div class="text-white h-100" ">
-          
-          <div class="img" style="background-image:url('/assets/images/featured/photo-2667-WebImage.jpg');"></div>
-          <div class="card-img-overlay">
-            <h3 class="card-title">Face Brick</h3>
-            <div class="d-flex flex-column flex-lg-row align-items-start">
-              <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
-              <a href="#" class="btn btn-secondary text-nowrap">Explore Face Brick</a>
-            </div>
-          </div>
-          
-          
-        </div>
-</div>
-    </div>
-    <div class="bb-featured px-3 py-3 bb-w-lg-25 bb-vh-sm-60">
-        <div class="text-white h-100" ">
-          
-          
-          <div class="img" style="background-image:url('/assets/images/featured/WheatfieldVelour-ModBelCali712007.jpg');"></div>
-          <div class="card-img-overlay">
-            <h4 class="card-title">Thin Brick</h4>
-            <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
-          </div>
-          
-        </div>
-</div>
-    <div class="bb-featured px-3 py-3 bb-w-lg-25 bb-vh-sm-60">
-        <div class="text-white h-100" ">
-          
-          
-          <div class="img" style="background-image:url('/assets/images/featured/image00024.JPG');"></div>
-          <div class="card-img-overlay">
-            <h4 class="card-title">Oversized Brick</h4>
-            <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
-          </div>
-          
-        </div>
-</div>
-  </div>
-  <div class="d-flex flex-column flex-lg-row">
-    <div class="bb-featured px-3 py-3 bb-w-lg-25 bb-vh-sm-60">
-        <div class="text-white h-100" ">
-          
-          
-          <div class="img" style="background-image:url('/assets/images/featured/BeldArchTN1019003.jpg');"></div>
-          <div class="card-img-overlay">
-            <h4 class="card-title">Roman Brick</h4>
-            <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
-          </div>
-          
-        </div>
-</div>
-    <div class="bb-featured px-3 py-3 bb-w-lg-25 bb-vh-sm-60">
-        <div class="text-white h-100" ">
-          
-          
-          <div class="img" style="background-image:url('/assets/images/featured/Garnetblendshapes.jpg');"></div>
-          <div class="card-img-overlay">
-            <h4 class="card-title">Special Shapes</h4>
-            <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
-          </div>
-          
-        </div>
-</div>
-    <div class="bb-w-lg-50">
-      <div class="bb-featured px-3 py-3 w-100 bb-vh-40 bb-vh-sm-60">
-        <div class="text-white h-100" ">
-          
-          <div class="img" style="background-image:url('/assets/images/featured/TheBearandTheButcherShamrockandLimeGreenGlazeIMG_9473.jpg');"></div>
-          <div class="card-img-overlay">
-            <h3 class="card-title">Glazed Brick</h3>
-            <div class="d-flex flex-column flex-lg-row align-items-start">
-              <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
-              <a href="#" class="btn btn-secondary text-nowrap">Explore Glazed Brick</a>
-            </div>
-          </div>
-          
-          
-        </div>
-</div>
-      <div class="bb-featured px-3 py-3 w-100 bb-vh-40 bb-vh-sm-60">
-        <div class="text-white h-100" ">
-          
-          <div class="img" style="background-image:url('/assets/images/featured/NotreDameCrossroads04.jpg');"></div>
-          <div class="card-img-overlay">
-            <h3 class="card-title">Special Shapes</h3>
-            <div class="d-flex flex-column flex-lg-row align-items-start">
-              <p class="card-text mr-lg-3">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
-              <a href="#" class="btn btn-secondary text-nowrap">Explore Special Shapes</a>
-            </div>
-          </div>
-          
-          
-        </div>
-</div>
-    </div>
-  </div>
-</div>
-
-        </div>
-        <div class="col-3">
-          
-        <h2>Find a Distributor Near You</h2>
-        <form class="form-inline justify-content-center my-4">
-          <div class="input-group input-group-lg mw-100">
-            <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Search Catalog" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+            <div class="col-auto">
+              <div class="input-group input-group-lg mw-100">
+                <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Search Catalog" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+                </div>
+              </div>
             </div>
           </div>
         </form>
-        <p>Lorem ipsum dolor sit amet, nec facer clita et, eos diam altera eruditi ut, platonem dissentias est ne. Nibh tantas pericula cu per. Has ea molestie liberavisse, eu sumo harum tantas eum. Mei te reque philosophia. Sed mutat diceret</p>
 
         </div>
       </div>
-      <div class="d-flex flex-column text-center py-5">
-        
-        <h2>Find a Distributor Near You</h2>
-        <form class="form-inline justify-content-center my-4">
-          <div class="input-group input-group-lg mw-100">
-            <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Search Catalog" aria-describedby="button-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
-            </div>
-          </div>
-        </form>
-        <p>Lorem ipsum dolor sit amet, nec facer clita et, eos diam altera eruditi ut, platonem dissentias est ne. Nibh tantas pericula cu per. Has ea molestie liberavisse, eu sumo harum tantas eum. Mei te reque philosophia. Sed mutat diceret</p>
-
-      </div>
     </div>
-  </div>
+  </div> -->
 
 		
-    <div class="footer">
+    <div class="bb-footer py-5">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col">
+        <div class="row pt-3">
+          <div class="col-auto pt-3 mr-3">
             <svg class="bb-logo-footer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.9 114.8" style="enable-background:new 0 0 460.9 114.8;" xml:space="preserve">
             	<g>
             		<path class="st0" d="M69.9,56.8c0.1,0.1,0.3,0.2,0.4,0.3c9.3,3.5,14.3,10.4,15.8,20c1.1,7.3,0.3,14.5-2.9,21.2
@@ -503,32 +654,40 @@
             		</g>
             	</g>
             </svg>
+          </div>
+          <div class="col-auto mr-auto pt-3">
+            <div class="row">
+              <div class="col-auto">
+                <ul class="list-unstyled">
+                  <li><a href="">Bricks</a></li>
+                  <li><a href="">Commercial</a></li>
+                  <li><a href="">Residential</a></li>
+                  <li><a href="">Gallery</a></li>
+                  <li><a href="">Find a Distributor</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <ul class="list-unstyled">
+                  <li><a href="">About</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Distributor Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-auto pt-3">
+            <h5><strong>Find us online</strong></h5>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto pt-3">
             <p class="disclaimer">&copy; Copyright 2019 The Belden Brick Company</p>
-          </div>
-          <div class="col">
-            <ul>
-              <li>Bricks</li>
-              <li>Commercial</li>
-              <li>Residential</li>
-              <li>Gallery</li>
-              <li>Find a Distributor</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li>About</li>
-              <li>News</li>
-              <li>Contact</li>
-              <li>Distributor Login</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5>Find us online</h5>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-pinterest"></i>
           </div>
         </div>
       </div>
@@ -540,18 +699,22 @@
 <script>
   $( document ).ready( function(){
 
+    bbNavbarStart = true;
     function checkToolbarScroll() {
       let bbNavbarClass = document.getElementById('bb-navbar').classList;
-      let bbNavbarAsideClass = document.getElementById('bb-navbar-aside').classList;
       let bbLogoClass = document.getElementById('bb-logo').classList;
-      if(window.innerWidth >= 992 && window.scrollY > document.getElementById('bb-navbar-aside').offsetHeight){
-        bbNavbarClass.remove("bb-navbar-start");
-        bbNavbarAsideClass.remove("bb-navbar-aside-start");
-        bbLogoClass.remove('bb-logo-start');
-      }else{
-        bbNavbarClass.add("bb-navbar-start");
-        bbNavbarAsideClass.add("bb-navbar-aside-start");
-        bbLogoClass.add('bb-logo-start');
+      if(window.innerWidth >= 992 && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.6){
+        if(bbNavbarStart){
+          bbNavbarClass.remove("bb-navbar-start");
+          bbLogoClass.remove('bb-logo-start');
+          bbNavbarStart = false;
+        };
+      }else if(window.innerWidth >= 992 && window.scrollY < document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+        if(!bbNavbarStart){
+          bbNavbarClass.add("bb-navbar-start");
+          bbLogoClass.add('bb-logo-start');
+          bbNavbarStart = true;
+        };
       };
     }
 
@@ -560,20 +723,6 @@
     });
 
     checkToolbarScroll();
-
-
-    // Array.from(document.getElementsByClassName('bb-featured')).forEach(function(element){
-    //   element.addEventListener('mouseenter',function(){
-    //       element.querySelector('div.card').style.transform = 'scale(1.1)';
-    //       //console.log(element.querySelector('div.card').style.backgroundSize);
-    //       //console.log(element.querySelector('div.card').set.style.backgroundSize = 'inherit');
-    //   })
-    //   element.addEventListener('mouseout',function(){
-    //
-    //       //element.querySelector('div.card').style.transform = 'scale(1)';
-    //   })
-    //
-    // });
 
   })
 </script>

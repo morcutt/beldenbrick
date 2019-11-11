@@ -8,6 +8,8 @@
 @import "bb-hero";
 @import "bb-markets";
 @import "bb-featured";
+@import "bb-products";
+@import "bb-product-facets";
 @import "bb-footer";
 
 
@@ -20,7 +22,6 @@
   background-attachment: fixed;
   // transform: scale(1.1);
 }
-
 @media (min-width: 992px){
 
 }

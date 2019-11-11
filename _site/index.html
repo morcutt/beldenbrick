@@ -9,27 +9,9 @@
 </head>
 
 	<body>
-		    <nav id="bb-navbar-aside" class="navbar navbar-expand-lg navbar-light bg-light pb-0 bb-navbar-aside bb-navbar-start">
-      <div class="navbar-collapse collapse" id="">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Distributor Login</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="bb-navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light pt-lg-4 pb-lg-4 bb-navbar bb-navbar-start">
+		    <nav id="bb-navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light bb-navbar bb-navbar-start">
       <a href="#" class="navbar-brand py-0 mr-0" href="#">
-        <svg id="bb-logo" class="bb-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.9 114.8" style="enable-background:new 0 0 460.9 114.8;" xml:space="preserve">
+        <svg id="bb-logo" class="bb-logo bb-logo-start" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.9 114.8" style="enable-background:new 0 0 460.9 114.8;" xml:space="preserve">
         	<g>
         		<path class="st0" d="M69.9,56.8c0.1,0.1,0.3,0.2,0.4,0.3c9.3,3.5,14.3,10.4,15.8,20c1.1,7.3,0.3,14.5-2.9,21.2
         			c-3.8,8-10.6,12.3-18.8,14.6c-5.2,1.5-10.6,2-16,2c-15.5,0.1-31.1,0-46.6,0.1c-1.3,0-1.8-0.3-1.8-1.7C0,78.9,0,44.6,0,10.4
@@ -123,6 +105,7 @@
       </button>
 
       <div class="navbar-collapse collapse" id="navbarColor01">
+        <hr class="bb-navbar-divider" />
         <ul class="navbar-nav ml-auto mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Bricks <span class="sr-only">(current)</span></a>
@@ -140,6 +123,7 @@
             <a class="nav-link" href="#">Find a Distributor</a>
           </li>
         </ul>
+        <hr class="bb-navbar-divider" />
         <form class="form-inline">
           <div class="input-group input-group">
             <input type="text" class="form-control" placeholder="Search color, texture, size…" aria-label="Search Catalog" aria-describedby="button-addon2">
@@ -148,10 +132,28 @@
             </div>
           </div>
         </form>
+        <hr class="bb-navbar-divider" />
+        <div class="bb-navbar-aside">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Distributor Login</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="bb-navbar-divider" />
       </div>
     </nav>
 
-		        <div class="bb-hero">
+		        <div class="bb-hero bb-home-hero">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade h-100" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -181,14 +183,14 @@
               </div>
             </div>
           </div>
-          <!-- <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a> -->
+          </a>
         </div>
       </div>
 
@@ -220,13 +222,11 @@
             <h2 class="card-title text-center">Commercial</h2>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <div class="d-flex flex-column justify-content-center align-items-center flex-lg-row">
-              <a href="#" class="btn btn-secondary my-3">Learn More</a>
-              <ul>
-                <li><a href="#">View Comercial Gallery</a></li><li><a href="#">Find buildings near me</a></li>
+              <a href="#" class="btn btn-secondary my-3 mx-3">Learn More</a>
+              <ul class="list-unstyled my-3">
+                <li><i class="fa fa-image mx-1"></i> <a href="#">View Gallery</a></li><li><i class="fa fa-map-marker mx-2"></i> <a href="#">Buildings near me</a></li>
               </ul>
             </div>
-
-
           </div>
         </div>
 
@@ -256,13 +256,11 @@
             <h2 class="card-title text-center">Residential</h2>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <div class="d-flex flex-column justify-content-center align-items-center flex-lg-row">
-              <a href="#" class="btn btn-secondary my-3">Learn More</a>
-              <ul>
-                <li><a href="#">View Comercial Gallery</a></li><li>&nbsp;</li>
+              <a href="#" class="btn btn-secondary my-3 mx-3">Learn More</a>
+              <ul class="list-unstyled my-3">
+                <li><i class="fa fa-image mx-1"></i> <a href="#">View Gallery</a></li>
               </ul>
             </div>
-
-
           </div>
         </div>
 
@@ -283,8 +281,8 @@
 
       </div>
     </div>
-    <div class="container py-5">
-      <div class="bb-featured">
+    <div class="container-fluid px-5">
+      <div class="bb-featured py-5">
         <div class="bb-featured-dummy"></div>
         <div class="bb-featured-display">
           <div class="bb-featured-grid">
@@ -388,45 +386,42 @@
         </div>
       </div>
     </div>
-    <div class="container py-5" >
-      <div class="row">
-        <div class="col">
-          
+    <div class="container" >
+      <div class="d-flex flex-column text-center py-5">
+        
         <h2>Find a Building Using Belden Brick Near You</h2>
         <p>Lorem ipsum dolor sit amet, nec facer clita et, eos diam altera eruditi ut, platonem dissentias est ne. Nibh tantas pericula cu per. Has ea molestie liberavisse, eu sumo harum tantas eum. Mei te reque philosophia. Sed mutat diceret</p>
-        <div class="row">
-          <div class="col">
-            <form class="form-inline">
-              <div class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Search color, texture, size…" aria-label="Search Catalog" aria-describedby="button-addon2">
+        <form class="form-inline justify-content-center my-4">
+          <div class="row">
+            <div class="col-auto">
+              <div class="input-group mw-100">
+                <div class="mr-3 mt-3">Access current location</div>
+                  <button class="btn btn-primary btn-lg" type="button" id="button-addon2"><i class="fa fa-map-marker"></i></button>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="h3 mt-2 text-center">or</div>
+            </div>
+            <div class="col-auto">
+              <div class="input-group input-group-lg mw-100">
+                <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Search Catalog" aria-describedby="button-addon2">
                 <div class="input-group-append">
                   <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
-          <div class="col">
-            <form class="form-inline">
-              <div class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Search color, texture, size…" aria-label="Search Catalog" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        </form>
 
-        </div>
       </div>
     </div>
   </div>
 
 		
-    <div class="footer">
+    <div class="bb-footer py-5">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col">
+        <div class="row pt-3">
+          <div class="col-auto pt-3 mr-3">
             <svg class="bb-logo-footer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.9 114.8" style="enable-background:new 0 0 460.9 114.8;" xml:space="preserve">
             	<g>
             		<path class="st0" d="M69.9,56.8c0.1,0.1,0.3,0.2,0.4,0.3c9.3,3.5,14.3,10.4,15.8,20c1.1,7.3,0.3,14.5-2.9,21.2
@@ -515,32 +510,40 @@
             		</g>
             	</g>
             </svg>
+          </div>
+          <div class="col-auto mr-auto pt-3">
+            <div class="row">
+              <div class="col-auto">
+                <ul class="list-unstyled">
+                  <li><a href="">Bricks</a></li>
+                  <li><a href="">Commercial</a></li>
+                  <li><a href="">Residential</a></li>
+                  <li><a href="">Gallery</a></li>
+                  <li><a href="">Find a Distributor</a></li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <ul class="list-unstyled">
+                  <li><a href="">About</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Distributor Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-auto pt-3">
+            <h5><strong>Find us online</strong></h5>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="btn btn-secondary btn-lg"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto pt-3">
             <p class="disclaimer">&copy; Copyright 2019 The Belden Brick Company</p>
-          </div>
-          <div class="col">
-            <ul>
-              <li>Bricks</li>
-              <li>Commercial</li>
-              <li>Residential</li>
-              <li>Gallery</li>
-              <li>Find a Distributor</li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul>
-              <li>About</li>
-              <li>News</li>
-              <li>Contact</li>
-              <li>Distributor Login</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5>Find us online</h5>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-pinterest"></i>
           </div>
         </div>
       </div>
@@ -552,18 +555,22 @@
 <script>
   $( document ).ready( function(){
 
+    bbNavbarStart = true;
     function checkToolbarScroll() {
       let bbNavbarClass = document.getElementById('bb-navbar').classList;
-      let bbNavbarAsideClass = document.getElementById('bb-navbar-aside').classList;
       let bbLogoClass = document.getElementById('bb-logo').classList;
-      if(window.innerWidth >= 992 && window.scrollY > document.getElementById('bb-navbar-aside').offsetHeight){
-        bbNavbarClass.remove("bb-navbar-start");
-        bbNavbarAsideClass.remove("bb-navbar-aside-start");
-        bbLogoClass.remove('bb-logo-start');
-      }else{
-        bbNavbarClass.add("bb-navbar-start");
-        bbNavbarAsideClass.add("bb-navbar-aside-start");
-        bbLogoClass.add('bb-logo-start');
+      if(window.innerWidth >= 992 && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.6){
+        if(bbNavbarStart){
+          bbNavbarClass.remove("bb-navbar-start");
+          bbLogoClass.remove('bb-logo-start');
+          bbNavbarStart = false;
+        };
+      }else if(window.innerWidth >= 992 && window.scrollY < document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+        if(!bbNavbarStart){
+          bbNavbarClass.add("bb-navbar-start");
+          bbLogoClass.add('bb-logo-start');
+          bbNavbarStart = true;
+        };
       };
     }
 
@@ -572,20 +579,6 @@
     });
 
     checkToolbarScroll();
-
-
-    // Array.from(document.getElementsByClassName('bb-featured')).forEach(function(element){
-    //   element.addEventListener('mouseenter',function(){
-    //       element.querySelector('div.card').style.transform = 'scale(1.1)';
-    //       //console.log(element.querySelector('div.card').style.backgroundSize);
-    //       //console.log(element.querySelector('div.card').set.style.backgroundSize = 'inherit');
-    //   })
-    //   element.addEventListener('mouseout',function(){
-    //
-    //       //element.querySelector('div.card').style.transform = 'scale(1)';
-    //   })
-    //
-    // });
 
   })
 </script>

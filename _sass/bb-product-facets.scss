@@ -1,0 +1,36 @@
+.product-facet {
+  .card-header {
+    padding: 0;
+    .btn {
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: block;
+      padding: 0.75rem;
+      text-align: left;
+      color: $blue;
+      .fa-angle-up {
+        transition: all .20s ease-out;
+      }
+      &.collapsed {
+        .fa-angle-up {
+          transform: rotate(180deg);
+        }
+      }
+      .fa-angle-down {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px){
+  .btn.bb-facet-nav {
+    display: none;
+  }
+  div#bb-facet-nav {
+    display: block;
+  }
+}
+@media (max-width: 992px){
+
+}

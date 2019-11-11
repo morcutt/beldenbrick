@@ -1,16 +1,13 @@
-.bb-hero {
+.bb-home-hero {
   height: 70vh;
   overflow: hidden;
-  // .carousel-inner {
-  //   perspective: 2px;
-  // }
+
   .carousel-item {
      background-size: cover;
      background-position: center;
      background-attachment: fixed;
-     // transform: translateZ(-1px) ;
      transform: scale(1.1);
-     // transition: all 2.6s ease-in-out;
+
      .carousel-caption {
        bottom: auto;
        top: 50%;
@@ -22,20 +19,14 @@
 }
 
 .bb-product-hero {
-  height: 30vh;
+  height: 15vh;
   .bb-product-hero-inner {
     overflow: hidden;
-  }
-  .bb-product-hero-img {
-    // background-size: cover;
-    // background-position: center;
-    // background-attachment: fixed;
-    // transform: scale(1.1);
   }
 }
 
 @media (min-width: 992px){
-  .bb-hero {
+  .bb-home-hero {
     margin-top: $spacer * -9;
     height: 100vh;
     h1 {
@@ -44,5 +35,6 @@
   }
   .bb-product-hero {
     margin-top: $spacer * -9;
+    height: 30vh;
   }
 }

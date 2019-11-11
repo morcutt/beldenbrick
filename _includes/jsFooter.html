@@ -4,18 +4,22 @@
 <script>
   $( document ).ready( function(){
 
+    bbNavbarStart = true;
     function checkToolbarScroll() {
       let bbNavbarClass = document.getElementById('bb-navbar').classList;
-      let bbNavbarAsideClass = document.getElementById('bb-navbar-aside').classList;
       let bbLogoClass = document.getElementById('bb-logo').classList;
-      if(window.innerWidth >= 992 && window.scrollY > document.getElementById('bb-navbar-aside').offsetHeight){
-        bbNavbarClass.remove("bb-navbar-start");
-        bbNavbarAsideClass.remove("bb-navbar-aside-start");
-        bbLogoClass.remove('bb-logo-start');
-      }else{
-        bbNavbarClass.add("bb-navbar-start");
-        bbNavbarAsideClass.add("bb-navbar-aside-start");
-        bbLogoClass.add('bb-logo-start');
+      if(window.innerWidth >= 992 && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.6){
+        if(bbNavbarStart){
+          bbNavbarClass.remove("bb-navbar-start");
+          bbLogoClass.remove('bb-logo-start');
+          bbNavbarStart = false;
+        };
+      }else if(window.innerWidth >= 992 && window.scrollY < document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+        if(!bbNavbarStart){
+          bbNavbarClass.add("bb-navbar-start");
+          bbLogoClass.add('bb-logo-start');
+          bbNavbarStart = true;
+        };
       };
     }
 
@@ -24,20 +28,6 @@
     });
 
     checkToolbarScroll();
-
-
-    // Array.from(document.getElementsByClassName('bb-featured')).forEach(function(element){
-    //   element.addEventListener('mouseenter',function(){
-    //       element.querySelector('div.card').style.transform = 'scale(1.1)';
-    //       //console.log(element.querySelector('div.card').style.backgroundSize);
-    //       //console.log(element.querySelector('div.card').set.style.backgroundSize = 'inherit');
-    //   })
-    //   element.addEventListener('mouseout',function(){
-    //
-    //       //element.querySelector('div.card').style.transform = 'scale(1)';
-    //   })
-    //
-    // });
 
   })
 </script>

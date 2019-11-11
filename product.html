@@ -5,8 +5,49 @@ layout: default
   {% include product-hero.html %}
   <div class="bb-ambient-paver">
     <div class="container-fluid" >
-      <div class="row">
-        <div class="col-2">
+      <div class="bb-products">
+        <div class="bb-product-facet-area">
+          {% include product-facets.html %}
+        </div>
+        <nav class="bb-breadcrumb-area" aria-label="breadcrumb">
+
+        </nav>
+        <div class="bb-product-desc-area">
+          <div>
+            <img src="/assets/images/products/pavers.jpg" alt="" class="img-fluid ml-3 mb-3 float-right">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+            <h1>Pavers</h1>
+            <p>Welcome to the Belden Brick Pavers Catalog. Whether your project includes a brick patio, walkway, driveway, or even an entire streetscape, we have a wide variety of clay pavers that will suit every need from residential paving to high strength industrial and commercial applications. Clay brick pavers exceed concrete pavers in durability, color selection, and they remain colorfast for generations. Learn more about our wide array of colors, sizes, and technical specifications.</p>
+            <h3>Tan Bricks</h3>
+            <p>Tan bricks offer a similar look to some of the lighter varieties of brick, but with more color saturation. They go well with almost every color scheme, which makes it easy to suit your specific taste. Just about every style of architecture looks good made with tan bricks, both modern and traditional.</p>
+          </div>
+        </div>
+        <div class="bb-product-list-area">
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+          <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+        </div>
+        <div class="bb-product-gallery">
+          {% include product-card.html %}
+          {% include product-card.html %}
+          <a href="#" class="btn btn-secondary">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="bb-ambient-paver">
+    <div class="container-fluid" >
+      <div class="row py-5">
+        <div class="col-md-2">
           {% include product-facets.html %}
         </div>
         <div class="col">
@@ -17,26 +58,32 @@ layout: default
             </ol>
           </nav>
           <div>
-            <div class="media">
-              <div class="media-body">
-                <h1>Pavers</h1>
-                <p>Welcome to the Belden Brick Pavers Catalog. Whether your project includes a brick patio, walkway, driveway, or even an entire streetscape, we have a wide variety of clay pavers that will suit every need from residential paving to high strength industrial and commercial applications. Clay brick pavers exceed concrete pavers in durability, color selection, and they remain colorfast for generations. Learn more about our wide array of colors, sizes, and technical specifications.</p>
-              </div>
-              <img src="/assets/images/products/pavers.jpg" alt="" class="img-fluid ml-3">
-            </div>
-            <div>
-              <h2>Tan Bricks</h2>
-              <p>Tan bricks offer a similar look to some of the lighter varieties of brick, but with more color saturation. They go well with almost every color scheme, which makes it easy to suit your specific taste. Just about every style of architecture looks good made with tan bricks, both modern and traditional.</p>
-            </div>
+            <img src="/assets/images/products/pavers.jpg" alt="" class="img-fluid ml-3 mb-3 float-right">
+            <h1>Pavers</h1>
+            <p>Welcome to the Belden Brick Pavers Catalog. Whether your project includes a brick patio, walkway, driveway, or even an entire streetscape, we have a wide variety of clay pavers that will suit every need from residential paving to high strength industrial and commercial applications. Clay brick pavers exceed concrete pavers in durability, color selection, and they remain colorfast for generations. Learn more about our wide array of colors, sizes, and technical specifications.</p>
+            <h3>Tan Bricks</h3>
+            <p>Tan bricks offer a similar look to some of the lighter varieties of brick, but with more color saturation. They go well with almost every color scheme, which makes it easy to suit your specific taste. Just about every style of architecture looks good made with tan bricks, both modern and traditional.</p>
           </div>
-          {% include __test__.html %}
+          <div class="row">
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+
+          </div>
+          <div class="d-flex flex-column text-center py-5">
+            {% include dealer-call-to-action-lg.html %}
+          </div>
         </div>
-        <div class="col-3">
+        <div class="col-md-3">
           {% include dealer-call-to-action-lg.html %}
+          {% include product-card.html %}
+          {% include product-card.html %}
+          <a href="#" class="btn btn-secondary">View Gallery</a>
+          {% include find-a-building-lg.html %}
         </div>
-      </div>
-      <div class="d-flex flex-column text-center py-5">
-        {% include dealer-call-to-action-lg.html %}
       </div>
     </div>
-  </div>
+  </div> -->

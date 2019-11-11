@@ -1,3 +1,4 @@
+$white:    #fff;
 $blue:    #6294A9;
 //$indigo:  #6610f2 !default;
 // $purple:  #6f42c1 !default;
@@ -16,6 +17,8 @@ $secondary: $tan;
 $link-color: $blue;
 
 
+
+
 /* custom vars */
 //$custom-font-size: 60px;
 $steel-green: #646c6c;
@@ -26,3 +29,8 @@ $deep-steel-alpha-50: rgba(44, 53, 57, .5);
 $theme-colors: (
   "dark": $deep-steel
 );
+
+
+$card-cap-bg: $white;
+$component-active-bg: $tan;
+$component-active-color: $deep-steel;

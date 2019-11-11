@@ -15,6 +15,8 @@
   display: inline-block;
   position: relative;
   width: 100%;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .bb-featured-dummy {
   margin-top: 600%;
@@ -109,7 +111,7 @@
         "item-6 item-6"
         "item-7 item-8"
         "item-7 item-8";
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 }
 @media (min-width: 992px){
@@ -124,6 +126,6 @@
         "item-4 item-4 item-2 item-3"
         "item-5 item-6 item-7 item-7"
         "item-5 item-6 item-8 item-8";
-    grid-gap: 1rem;
+    grid-gap: 3rem;
   }
 }

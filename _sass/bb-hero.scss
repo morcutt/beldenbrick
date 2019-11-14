@@ -1,18 +1,23 @@
 .bb-home-hero {
-  // height: 70vh;
-  height: 300px;
+  height: 70vh;
   overflow: hidden;
 
   .carousel-item {
-     background-size: contain;
-     background-position: center;
-     background-attachment: fixed;
-     // transform: scale(1.1);
-
-     .carousel-caption {
-       bottom: auto;
-       top: 50%;
-     }
+    .bb-backdrop {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      transform: scale(1.1);
+    }
+    .carousel-caption {
+      bottom: auto;
+      top: 50%;
+    }
   }
   h1 {
     text-shadow: 0 0 .5rem $deep-steel;

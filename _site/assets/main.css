@@ -7670,10 +7670,10 @@ a.text-dark:hover, a.text-dark:focus {
     .bb-navbar .input-group {
       width: 19rem; } }
 .bb-home-hero {
-  height: 500px;
+  height: 300px;
   overflow: hidden; }
   .bb-home-hero .carousel-item {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-attachment: fixed; }
     .bb-home-hero .carousel-item .carousel-caption {

@@ -7675,8 +7675,7 @@ a.text-dark:hover, a.text-dark:focus {
   .bb-home-hero .carousel-item {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    transform: scale(1.1); }
+    background-attachment: fixed; }
     .bb-home-hero .carousel-item .carousel-caption {
       bottom: auto;
       top: 50%; }
@@ -7730,7 +7729,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding-right: 6rem; }
 
 .bb-featured-dummy {
-  margin-top: 600%; }
+  margin-top: 1500%; }
 
 .bb-featured-display {
   position: absolute;

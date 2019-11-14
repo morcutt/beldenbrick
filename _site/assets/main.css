@@ -7680,7 +7680,6 @@ a.text-dark:hover, a.text-dark:focus {
     bottom: 0;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     transform: scale(1.1); }
   .bb-home-hero .carousel-item .carousel-caption {
     bottom: auto;

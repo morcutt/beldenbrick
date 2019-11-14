@@ -7807,10 +7807,10 @@ a.text-dark:hover, a.text-dark:focus {
     grid-gap: 3rem; } }
 .bb-products {
   display: grid;
-  grid-template-columns: 15% auto 25%;
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
   grid-gap: 1rem;
-  grid-template-areas: "facet-area breadcrumb-area breadcrumb-area" "facet-area product-desc-area product-desc-area" "facet-area product-list-area product-gallery"; }
+  grid-template-areas: "facet-area" "product-desc-area" "product-list-area" "product-gallery"; }
 
 .bb-product-facet-area {
   grid-area: facet-area; }
@@ -7822,10 +7822,35 @@ a.text-dark:hover, a.text-dark:focus {
   grid-area: product-desc-area; }
 
 .bb-product-list-area {
-  grid-area: product-list-area; }
+  grid-area: product-list-area;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .bb-product-gallery {
   grid-area: product-gallery; }
+
+.bb-product-img {
+  width: 100%; }
+
+@media (min-width: 992px) {
+  .bb-products {
+    grid-template-columns: 20% auto 25%;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+    grid-template-areas: "facet-area product-desc-area product-desc-area" "facet-area product-list-area product-gallery"; }
+
+  .bb-product-img {
+    width: 60%; } }
+@media (min-width: 1200px) {
+  .bb-products {
+    grid-template-columns: 15% auto 20%;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+    grid-template-areas: "facet-area product-desc-area product-gallery" "facet-area product-list-area product-gallery"; } }
+.btn.bb-facet-nav {
+  position: absolute;
+  margin-top: -4rem; }
 
 .product-facet .card-header {
   padding: 0; }
@@ -7843,7 +7868,7 @@ a.text-dark:hover, a.text-dark:focus {
     .product-facet .card-header .btn .fa-angle-down {
       display: none; }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   .btn.bb-facet-nav {
     display: none; }
 
@@ -7851,7 +7876,7 @@ a.text-dark:hover, a.text-dark:focus {
     display: block; } }
 .bb-footer {
   background-color: #ECECE4;
-  background-image: url("/assets/images/footer-brick.svg");
+  background-image: url("./assets/images/footer-brick.svg");
   background-repeat: repeat-x; }
   .bb-footer .disclaimer {
     font-size: 0.875rem; }
@@ -7863,7 +7888,7 @@ a.text-dark:hover, a.text-dark:focus {
   fill: #2c3539; }
 
 .bb-ambient-paver {
-  background: url("/assets/images/ambient-paver.svg");
+  background: url("./assets/images/ambient-paver.svg");
   background-size: cover;
   background-position: center -8rem;
   background-repeat: repeat-y;

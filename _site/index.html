@@ -164,23 +164,23 @@
             <div class="carousel-item h-100 active">
               <div class="bb-backdrop" style="background-image:url('./assets/images/hero/BeldCant415031.jpg');"></div>
               <!-- <img src="./assets/images/hero/BeldCant415031.jpg" class="d-block w-100" alt="..."> -->
-              <div class="carousel-caption d-md-block">
-                <h1>The Standard of Comparison</h1>
+              <div class="carousel-caption caption-left carousel-caption--animate d-md-block">
+                <h1>The Standard of<br/> Comparison</h1>
                 <a href="#" class="btn btn-primary btn-lg my-3">Learn More</a>
               </div>
             </div>
             <div class="carousel-item h-100">
               <div class="bb-backdrop" style="background-image:url('./assets/images/hero/JAS_2407.jpg');"></div>
               <!-- <img src="./assets/images/hero/BeldCant415031.jpg" class="d-block w-100" alt="..."> -->
-              <div class="carousel-caption d-md-block">
-                <h1>Express Your Vision</h1>
+              <div class="carousel-caption caption-right carousel-caption--animate d-md-block">
+                <h1>Express <br/>Your Vision</h1>
                 <a href="#" class="btn btn-primary btn-lg my-3">Learn More</a>
               </div>
             </div>
             <div class="carousel-item h-100">
               <div class="bb-backdrop" style="background-image:url('./assets/images/hero/BeldInd817001.jpg');"></div>
               <!-- <img src="./assets/images/hero/BeldCant415031.jpg" class="d-block w-100" alt="..."> -->
-              <div class="carousel-caption d-md-block ">
+              <div class="carousel-caption carousel-caption--animate d-md-block ">
                 <h1>The Standard of Comparison</h1>
                 <a href="#" class="btn btn-primary btn-lg my-3">Learn More</a>
               </div>
@@ -202,7 +202,7 @@
       <div class="row justify-content-center py-5">
         <div class="col-10 mb-3 col-sm-6 col-lg-5 mb-lg-0">
           
-        <div class="card bb-market">
+        <div class="card bb-market bb-market-start">
           <svg viewBox="0 0 489 344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
               <pattern id="img1" patternUnits="userSpaceOnUse" width="600" height="450">
@@ -236,7 +236,7 @@
         </div>
         <div class="col-10 mt-3 col-sm-6 col-lg-5 offset-lg-1 mt-sm-0">
           
-        <div class="card bb-market">
+        <div class="card bb-market bb-market-start">
           <svg viewBox="0 0 489 344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
               <pattern id="img2" patternUnits="userSpaceOnUse" width="600" height="450">
@@ -285,6 +285,23 @@
       </div>
     </div>
     <div class="container">
+      
+        <div class="bb-select-color py-5">
+          <a href="#" class="bb-color bb-color-white"><span>White</span></a>
+          <a href="#" class="bb-color bb-color-cream"><span>Cream</span></a>
+          <a href="#" class="bb-color bb-color-gray"><span>Gray</span></a>
+          <a href="#" class="bb-color bb-color-tan"><span>Tan</span></a>
+          <a href="#" class="bb-color bb-color-buff"><span>Buff</span></a>
+          <a href="#" class="bb-color bb-color-pink"><span>Pink</span></a>
+          <a href="#" class="bb-color bb-color-red"><span>Red</span></a>
+          <a href="#" class="bb-color bb-color-brown"><span>Brown</span></a>
+          <a href="#" class="bb-color bb-color-black"><span>Black</span></a>
+          <div class="bb-color-desc">
+            <h4 class="mr-3 mb-0">Explore by Color</h4>
+            <p class="mb-0">Complement and enhance with clay pavers. Express your vision of comfortable living.</p>
+          </div>
+        </div>
+
       <div class="bb-featured py-5">
         <div class="bb-featured-dummy"></div>
         <div class="bb-featured-display">
@@ -559,6 +576,7 @@
   $( document ).ready( function(){
 
     bbNavbarStart = true;
+    bbMarketStart = true;
     function checkToolbarScroll() {
       let bbNavbarClass = document.getElementById('bb-navbar').classList;
       let bbLogoClass = document.getElementById('bb-logo').classList;
@@ -575,6 +593,20 @@
           bbNavbarStart = true;
         };
       };
+
+      let bbMarketClass = document.getElementsByClassName('bb-market');
+      //if(bbMarketClass != undefined && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+      if(bbMarketClass != undefined && window.scrollY > document.getElementsByClassName('bb-market')[0].offsetHeight*.4){
+        if(bbMarketStart){
+          Array.from(bbMarketClass).forEach(x=>x.classList.remove("bb-market-start"));
+          bbMarketStart = false;
+        }
+      }else if(bbMarketClass != undefined && window.scrollY > document.getElementsByClassName('bb-market')[0].offsetHeight*.2){
+        if(!bbMarketStart){
+          Array.from(bbMarketClass).forEach(x=>x.classList.add("bb-market-start"));
+          bbMarketStart = true;
+        }
+      }
     }
 
     window.addEventListener('scroll', function(e) {

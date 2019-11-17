@@ -5,6 +5,7 @@
   $( document ).ready( function(){
 
     bbNavbarStart = true;
+    bbMarketStart = true;
     function checkToolbarScroll() {
       let bbNavbarClass = document.getElementById('bb-navbar').classList;
       let bbLogoClass = document.getElementById('bb-logo').classList;
@@ -21,6 +22,20 @@
           bbNavbarStart = true;
         };
       };
+
+      let bbMarketClass = document.getElementsByClassName('bb-market');
+      //if(bbMarketClass != undefined && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+      if(bbMarketClass != undefined && window.scrollY > document.getElementsByClassName('bb-market')[0].offsetHeight*.4){
+        if(bbMarketStart){
+          Array.from(bbMarketClass).forEach(x=>x.classList.remove("bb-market-start"));
+          bbMarketStart = false;
+        }
+      }else if(bbMarketClass != undefined && window.scrollY > document.getElementsByClassName('bb-market')[0].offsetHeight*.2){
+        if(!bbMarketStart){
+          Array.from(bbMarketClass).forEach(x=>x.classList.add("bb-market-start"));
+          bbMarketStart = true;
+        }
+      }
     }
 
     window.addEventListener('scroll', function(e) {

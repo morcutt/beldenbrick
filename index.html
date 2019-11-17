@@ -7,10 +7,10 @@ layout: default
     <div class="container" >
       <div class="row justify-content-center py-5">
         <div class="col-10 mb-3 col-sm-6 col-lg-5 mb-lg-0">
-          {% include market-card.html class="bb-market" content="Commercial" imgID="img1" image="./assets/images/featured/BeldInd817001.jpg" links='<li><i class="fa fa-image mx-1"></i> <a href="#">View Gallery</a></li><li><i class="fa fa-map-marker mx-2"></i> <a href="#">Buildings near me</a></li>' %}
+          {% include market-card.html class="bb-market bb-market-start" content="Commercial" imgID="img1" image="./assets/images/featured/BeldInd817001.jpg" links='<li><i class="fa fa-image mx-1"></i> <a href="#">View Gallery</a></li><li><i class="fa fa-map-marker mx-2"></i> <a href="#">Buildings near me</a></li>' %}
         </div>
         <div class="col-10 mt-3 col-sm-6 col-lg-5 offset-lg-1 mt-sm-0">
-          {% include market-card.html class="bb-market" content="Residential" imgID="img2" image="./assets/images/featured/IMG_0246.JPG" links='<li><i class="fa fa-image mx-1"></i> <a href="#">View Gallery</a></li>' %}
+          {% include market-card.html class="bb-market bb-market-start" content="Residential" imgID="img2" image="./assets/images/featured/IMG_0246.JPG" links='<li><i class="fa fa-image mx-1"></i> <a href="#">View Gallery</a></li>' %}
         </div>
       </div>
       <div class="d-flex flex-column text-center py-5">
@@ -18,6 +18,7 @@ layout: default
       </div>
     </div>
     <div class="container">
+      {% include select-color.html %}
       <div class="bb-featured py-5">
         <div class="bb-featured-dummy"></div>
         <div class="bb-featured-display">

@@ -7670,7 +7670,7 @@ a.text-dark:hover, a.text-dark:focus {
     .bb-navbar .input-group {
       width: 19rem; } }
 .bb-home-hero {
-  height: 70vh;
+  height: 90vh;
   overflow: hidden; }
   .bb-home-hero .carousel-item .bb-backdrop {
     position: absolute;
@@ -7680,10 +7680,30 @@ a.text-dark:hover, a.text-dark:focus {
     bottom: 0;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     transform: scale(1.1); }
   .bb-home-hero .carousel-item .carousel-caption {
-    bottom: auto;
-    top: 50%; }
+    transform: translateY(-25vh);
+    opacity: 0;
+    transition: all 1.5s ease-out; }
+    .bb-home-hero .carousel-item .carousel-caption .btn {
+      transform: translateY(15vh);
+      opacity: 0;
+      transition: all 2s ease-out; }
+    .bb-home-hero .carousel-item .carousel-caption.caption-right {
+      right: 0;
+      left: 50%;
+      text-align: left; }
+    .bb-home-hero .carousel-item .carousel-caption.caption-left {
+      right: 50%;
+      left: 0;
+      text-align: right; }
+  .bb-home-hero .carousel-item.active .carousel-caption--animate {
+    transform: translateY(-15vh);
+    opacity: 1; }
+    .bb-home-hero .carousel-item.active .carousel-caption--animate .btn {
+      opacity: 1;
+      transform: translateY(0); }
   .bb-home-hero h1 {
     text-shadow: 0 0 0.5rem #2c3539; }
 
@@ -7709,11 +7729,91 @@ a.text-dark:hover, a.text-dark:focus {
   .bb-market .card-body {
     background: #fff;
     border: 1px solid #adb5bd; }
+  .bb-market.bb-market-start {
+    transform: translate(0, 30vh);
+    opacity: 0; }
 
 .bb-market:hover {
   box-shadow: 0rem 3rem 3rem rgba(0, 0, 0, 0.1);
   transform: scale(1.02); }
 
+.bb-select-color {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap-reverse;
+  position: relative; }
+
+.bb-color {
+  height: 2rem;
+  transition: all .5s ease-in-out;
+  border: 1px solid #2c3539;
+  text-align: center;
+  overflow: hidden; }
+  .bb-color span {
+    color: #fff;
+    display: block;
+    transition: inherit; }
+  .bb-color:hover {
+    text-decoration: none; }
+
+.bb-color-white {
+  background-color: #fff; }
+
+.bb-color-cream {
+  background-color: #fee6c9; }
+
+.bb-color-gray {
+  background-color: #666; }
+
+.bb-color-tan {
+  background-color: #e7c894; }
+
+.bb-color-buff {
+  background-color: #e1a265; }
+
+.bb-color-pink {
+  background-color: #da6a62; }
+
+.bb-color-red {
+  background-color: #BB1215; }
+
+.bb-color-brown {
+  background-color: #7b5028; }
+
+.bb-color-black {
+  background-color: #222; }
+
+.bb-color-desc {
+  position: absolute;
+  display: flex;
+  background-color: rgba(44, 53, 57, 0.5);
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  align-items: center; }
+
+@media (min-width: 576px) {
+  .bb-select-color {
+    flex-direction: row;
+    height: 15rem; }
+
+  .bb-color {
+    flex-grow: 1;
+    height: 9rem;
+    font-size: 1.4rem;
+    position: relative; }
+    .bb-color span {
+      position: absolute;
+      width: 100%;
+      margin-top: -5rem;
+      opacity: 0;
+      background-color: rgba(44, 53, 57, 0.5); }
+
+  .bb-color:hover {
+    height: 11rem; }
+    .bb-color:hover span {
+      margin-top: 0;
+      opacity: 1; } }
 .bb-market {
   background: none;
   border: none;
@@ -7880,7 +7980,7 @@ a.text-dark:hover, a.text-dark:focus {
     display: block; } }
 .bb-footer {
   background-color: #ECECE4;
-  background-image: url("./assets/images/footer-brick.svg");
+  background-image: url("./images/footer-brick.svg");
   background-repeat: repeat-x; }
   .bb-footer .disclaimer {
     font-size: 0.875rem; }
@@ -7892,7 +7992,7 @@ a.text-dark:hover, a.text-dark:focus {
   fill: #2c3539; }
 
 .bb-ambient-paver {
-  background: url("./assets/images/ambient-paver.svg");
+  background: url("./images/ambient-paver.svg");
   background-size: cover;
   background-position: center -8rem;
   background-repeat: repeat-y;

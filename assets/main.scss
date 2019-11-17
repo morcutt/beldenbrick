@@ -7,6 +7,7 @@
 @import "bb-navbar";
 @import "bb-hero";
 @import "bb-markets";
+@import "bb-select-color";
 @import "bb-featured";
 @import "bb-products";
 @import "bb-product-facets";
@@ -14,7 +15,7 @@
 
 
 .bb-ambient-paver {
-  background: url('./assets/images/ambient-paver.svg');
+  background: url('./images/ambient-paver.svg');
   background-size: cover;
   background-position: center -8rem;
   background-repeat: repeat-y;

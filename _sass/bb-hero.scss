@@ -1,5 +1,5 @@
 .bb-home-hero {
-  height: 70vh;
+  height: 90vh;
   overflow: hidden;
 
   .carousel-item {
@@ -11,12 +11,38 @@
       bottom: 0;
       background-size: cover;
       background-position: center;
-      // background-attachment: fixed;
+      background-attachment: fixed;
       transform: scale(1.1);
     }
     .carousel-caption {
-      bottom: auto;
-      top: 50%;
+      transform: translateY(-25vh);
+      opacity: 0;
+      transition: all 1.5s ease-out;
+      .btn {
+        transform: translateY(15vh);
+        opacity: 0;
+        transition: all 2s ease-out;
+      }
+      &.caption-right {
+        right: 0;
+        left: 50%;
+        text-align: left;
+      }
+      &.caption-left {
+        right: 50%;
+        left: 0;
+        text-align: right;
+      }
+    }
+    &.active {
+      .carousel-caption--animate {
+        transform: translateY(-15vh);
+        opacity: 1;
+        .btn {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     }
   }
   h1 {

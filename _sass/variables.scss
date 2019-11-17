@@ -34,3 +34,10 @@ $theme-colors: (
 $card-cap-bg: $white;
 $component-active-bg: $tan;
 $component-active-color: $deep-steel;
+$breadcrumb-bg: transparent;
+
+$breadcrumb-padding-y:              0;
+$breadcrumb-padding-x:              0;
+// $breadcrumb-item-padding:           .5rem !default;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-border-radius:          0;

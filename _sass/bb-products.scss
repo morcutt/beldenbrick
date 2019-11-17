@@ -7,7 +7,7 @@
       "facet-area"
       "product-desc-area"
       "product-list-area"
-      "product-gallery"
+      "product-right"
 }
 
 .bb-product-facet-area {
@@ -24,16 +24,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
 }
-.bb-product-gallery {
-  grid-area: product-gallery;
+.bb-product-right {
+  grid-area: product-right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
 }
 
 .bb-product-img {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: $spacer*2;
 }
 
-// @media (min-width: 576px){
+@media (min-width: 576px){
+  .bb-product-img {
+    float: right;
+    width: 60%;
+    margin-left:$spacer*2;
+    margin-right: 0;
+  }
+}
 @media (min-width: 992px){
   .bb-products {
     grid-template-columns: 20% auto 25%;
@@ -41,12 +56,8 @@
     grid-gap: 2rem;
     grid-template-areas:
         "facet-area product-desc-area product-desc-area"
-        "facet-area product-list-area product-gallery"
+        "facet-area product-list-area product-right"
   }
-  .bb-product-img {
-    width: 60%;
-  }
-
 }
 @media (min-width: 1200px){
 
@@ -55,7 +66,7 @@
     grid-template-rows: auto 1fr;
     grid-gap: 2rem;
     grid-template-areas:
-        "facet-area product-desc-area product-gallery"
-        "facet-area product-list-area product-gallery"
+        "facet-area product-desc-area product-right"
+        "facet-area product-list-area product-right"
   }
 }

@@ -39,9 +39,18 @@
 }
 
 .bb-product-hero {
-  height: 15vh;
+  height: 20vh;
+  position: relative;
   .bb-product-hero-inner {
-    overflow: hidden;
+    .bb-backdrop {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: center;
+    }
   }
 }
 @media (min-width: 576px){
@@ -71,10 +80,6 @@
     margin-top: $spacer * -9;
     height: 100vh;
     .carousel-item {
-      .bb-backdrop {
-        background-attachment: fixed;
-        transform: scale(1.1);
-      }
       .carousel-caption {
         h1 {
           font-size: 5rem;
@@ -106,12 +111,16 @@
 
   .bb-product-hero {
     margin-top: $spacer * -9;
-    height: 30vh;
+    height: 40vh;
   }
 }
 @media (min-width: 1200px){
   .bb-home-hero {
     .carousel-item {
+      .bb-backdrop {
+        background-attachment: fixed;
+        transform: scale(1.1);
+      }
       .carousel-caption {
         h1 {
           font-size: 6rem;
@@ -127,6 +136,14 @@
           left: 0;
           text-align: right;
         }
+      }
+    }
+  }
+  .bb-product-hero {
+    .bb-product-hero-inner {
+      .bb-backdrop {
+        // background-attachment: fixed;
+        // transform: scale(1.1);
       }
     }
   }

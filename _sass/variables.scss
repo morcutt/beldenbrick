@@ -24,7 +24,7 @@ $link-color: $blue;
 $steel-green: #646c6c;
 $deep-purple: #2c2c34;
 $deep-steel: rgba(44, 53, 57, 1);
-$deep-steel-alpha-50: rgba(44, 53, 57, .5);
+$deep-steel-alpha-50: rgba(44, 53, 57, .8);
 
 $theme-colors: (
   "dark": $deep-steel
@@ -32,10 +32,9 @@ $theme-colors: (
 
 
 $card-cap-bg: $white;
-$component-active-bg: $tan;
-$component-active-color: $deep-steel;
+// $component-active-bg: $tan;
+// $component-active-color: $deep-steel;
 $breadcrumb-bg: transparent;
-
 $breadcrumb-padding-y:              0;
 $breadcrumb-padding-x:              0;
 // $breadcrumb-item-padding:           .5rem !default;

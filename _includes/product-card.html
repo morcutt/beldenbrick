@@ -2,6 +2,11 @@
         <div class="card mb-3" >
           <img src="https://via.placeholder.com/200x150/666/555/?text=Placeholder+Image" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h6><a href="#" class="btn btn-text stretched-link">{{ include.title }}</a></h6>
+            {% if include.bricks != undefined %}
+            <ul class="my-3">
+              {{ include.bricks }}
+            </ul>
+            {% endif %}
           </div>
         </div>

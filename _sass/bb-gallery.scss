@@ -1,0 +1,59 @@
+.bb-gallery{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1rem;
+  grid-template-areas:
+      "facet-area"
+      "product-desc-area"
+      "product-list-area"
+}
+
+.bb-product-facet-area {
+  grid-area: facet-area;
+}
+.bb-breadcrumb-area {
+  grid-area: breadcrumb-area;
+}
+.bb-product-desc-area {
+  grid-area: product-desc-area;
+}
+.bb-product-list-area {
+  grid-area: product-list-area;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+.bb-product-right {
+  grid-area: product-right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+@media (min-width: 576px){
+
+}
+@media (min-width: 992px){
+  .bb-gallery{
+    grid-template-columns: 20% auto;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+    grid-template-areas:
+        "facet-area product-desc-area"
+        "facet-area product-list-area"
+  }
+}
+@media (min-width: 1200px){
+
+  .bb-gallery{
+    grid-template-columns: 15% auto;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+    grid-template-areas:
+        "facet-area product-desc-area"
+        "facet-area product-list-area"
+  }
+}

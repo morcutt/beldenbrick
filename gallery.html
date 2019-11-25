@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+  {% include product-hero.html case="gallery" %}
+  <div class="bb-ambient-paver">
+    <div class="container-fluid" >
+      <div class="bb-gallery pt-3">
+        <div class="bb-product-facet-area">
+          {% include product-facets.html %}
+        </div>
+        <div class="bb-product-desc-area">
+          <div>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Gallery</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <a href="#" class="badge badge-primary">Pavers &nbsp;<i class="fa fa-close"></i></a>
+                <a href="#" class="badge badge-primary">Tan &nbsp;<i class="fa fa-close"></i></a>
+              </li>
+            </ol>
+            <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked><i class="fa fa-list"></i> List
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"><i class="fa fa-map"></i> Map
+              </label>
+            </div>
+            <h1>Gallery</h1>
+
+          </div>
+        </div>
+        <div class="bb-product-list-area">
+          <div class="col-12 col-sm-4 col-lg-6 col-xl-3">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" %}</div>
+          <div class="col-12 col-sm-4 col-lg-6 col-xl-3">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" %}</div>
+          <div class="col-12 col-sm-4 col-lg-6 col-xl-3">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" %}</div>
+          <div class="col-12 col-sm-4 col-lg-6 col-xl-3">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" %}</div>
+          <div class="col-12 col-sm-4 col-lg-6 col-xl-3">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" %}</div>
+          <div class="col-12 col-sm-4 col-lg-6 col-xl-3">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" %}</div>
+          <div class="col-12 col-sm-4 col-lg-6 col-xl-3">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" %}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="bb-ambient-paver">
+    <div class="container-fluid" >
+      <div class="row py-5">
+        <div class="col-md-2">
+          {% include product-facets.html %}
+        </div>
+        <div class="col">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+          </nav>
+          <div>
+            <img src="./assets/images/products/pavers.jpg" alt="" class="img-fluid ml-3 mb-3 float-right">
+            <h1>Pavers</h1>
+            <p>Welcome to the Belden Brick Pavers Catalog. Whether your project includes a brick patio, walkway, driveway, or even an entire streetscape, we have a wide variety of clay pavers that will suit every need from residential paving to high strength industrial and commercial applications. Clay brick pavers exceed concrete pavers in durability, color selection, and they remain colorfast for generations. Learn more about our wide array of colors, sizes, and technical specifications.</p>
+            <h3>Tan Bricks</h3>
+            <p>Tan bricks offer a similar look to some of the lighter varieties of brick, but with more color saturation. They go well with almost every color scheme, which makes it easy to suit your specific taste. Just about every style of architecture looks good made with tan bricks, both modern and traditional.</p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+            <div class="col-12 col-sm-5 col-lg-4 col-xl-3">{% include product-card.html %}</div>
+
+          </div>
+          <div class="d-flex flex-column text-center py-5">
+            {% include dealer-call-to-action.html %}
+          </div>
+        </div>
+        <div class="col-md-3">
+          {% include dealer-call-to-action.html %}
+          {% include product-card.html %}
+          {% include product-card.html %}
+          <a href="#" class="btn btn-secondary">View Gallery</a>
+          {% include find-a-building.html %}
+        </div>
+      </div>
+    </div>
+  </div> -->

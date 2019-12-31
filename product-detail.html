@@ -2,21 +2,30 @@
 layout: default
 ---
 
-  {% include product-hero.html case="product-detail" %}
   <div class="bb-ambient-paver">
     <div class="container-fluid" >
       <div class="bb-product-detail pt-3">
         <div class="bb-product-desc-area">
-          <div>
-            <a href="#" class="float-right"><i class="fa fa-angle-left"></i>&nbsp; Return to previous page</a>
+
+            <!-- <a href="#" class="float-right"><i class="fa fa-angle-left"></i>&nbsp; Return to previous page</a> -->
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Bricks</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Product Name</li>
+              <li class="breadcrumb-item active" aria-current="page">Commodore</li>
             </ol>
-            <h1>Product Name</h1>
-            <p>Product Number</p>
-            <img src="https://via.placeholder.com/300x225/666/555/?text=Placeholder+Image" alt="" class="bb-product-detail-img">
-            <table class="table" style="width: fit-content;">
+            <h1>Commodore</h1>
+            <!-- <p>SPL ID: 00000050</p> -->
+            <ul class="nav nav-tabs nav-fill mb-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Smooth</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Velore</a>
+              </li>
+            </ul>
+            <div class="bb-product-detail-img">
+              <img src="./assets/images/bricks/commodore-smooth_41117930645_o.jpg" alt="">
+            </div>
+            <!-- <table class="table" style="width: fit-content;">
               <tbody>
                 <tr>
                   <th scope="row">Standards / Type (Meets grade SW for all)</th>
@@ -47,60 +56,70 @@ layout: default
                   <td>Belden Brick recommends using Sure Klean 600® to clean this product. Alternatively EaCo Chem NMD 80® can be used to clean any of our brick. {50L,50L}</td>
                 </tr>
               </tbody>
-            </table>
-            <h2 style="clear:left;">Sizes</h2>
-            <table class="table" style="">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Sizes</th>
-                  <th scope="col">Width</th>
-                  <th scope="col">Height</th>
-                  <th scope="col">Length</th>
-                  <th scope="col">Thin Flat Back</th>
-                  <th scope="col">Thin Dove Tail</th>
-                  <th scope="col">Unit/SQ. FT.</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Modular</th>
-                  <td>3 5/8" / 92mm</td>
-                  <td>2 1/4" / 57mm</td>
-                  <td>7 5/8" / 194mm</td>
-                  <td>5/8" / 16mm</td>
-                  <td>3/4" / 19mm</td>
-                  <td>6.86</td>
-                </tr>
-                <tr>
-                  <th scope="row">Economo Modular</th>
-                  <td>3 5/8" / 92mm</td>
-                  <td>3 5/8" / 92mm</td>
-                  <td>7 5/8" / 194mm</td>
-                  <td>5/8" / 16mm</td>
-                  <td>3/4" / 19mm</td>
-                  <td>4,55</td>
-                </tr>
-                <tr>
-                  <th scope="row">Norman</th>
-                  <td>3 5/8" / 92mm</td>
-                  <td>2 1/4" / 57mm</td>
-                  <td>11 5/8" / 295mm</td>
-                  <td>5/8" / 16mm</td>
-                  <td>3/4" / 19mm</td>
-                  <td>4,.57</td>
-                </tr>
-                <tr>
-                  <th scope="row">Utility</th>
-                  <td>3 5/8" / 92mm</td>
-                  <td>3 5/8" / 92mm</td>
-                  <td>11 5/8" / 295mm</td>
-                  <td>5/8" / 16mm</td>
-                  <td>3/4" / 19mm</td>
-                  <td>3</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            </table> -->
+            <h2>Sizes</h2>
+            <ul class="nav nav-tabs nav-fill mb-3">
+              <li class="nav-item ">
+                <a class="nav-link active" href="#">Face</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Thin</a>
+              </li>
+            </ul>
+            <div class="bb-product-detail-specs table-responsive">
+              <table class="table" style="">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Sizes</th>
+                    <th scope="col">Width</th>
+                    <th scope="col">Height</th>
+                    <th scope="col">Length</th>
+                    <th scope="col">Thin Flat Back</th>
+                    <th scope="col">Thin Dove Tail</th>
+                    <th scope="col">Unit/SQ. FT.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Modular</th>
+                    <td>3 5/8" / 92mm</td>
+                    <td>2 1/4" / 57mm</td>
+                    <td>7 5/8" / 194mm</td>
+                    <td>5/8" / 16mm</td>
+                    <td>3/4" / 19mm</td>
+                    <td>6.86</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Economo Modular</th>
+                    <td>3 5/8" / 92mm</td>
+                    <td>3 5/8" / 92mm</td>
+                    <td>7 5/8" / 194mm</td>
+                    <td>5/8" / 16mm</td>
+                    <td>3/4" / 19mm</td>
+                    <td>4,55</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Norman</th>
+                    <td>3 5/8" / 92mm</td>
+                    <td>2 1/4" / 57mm</td>
+                    <td>11 5/8" / 295mm</td>
+                    <td>5/8" / 16mm</td>
+                    <td>3/4" / 19mm</td>
+                    <td>4,.57</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Utility</th>
+                    <td>3 5/8" / 92mm</td>
+                    <td>3 5/8" / 92mm</td>
+                    <td>11 5/8" / 295mm</td>
+                    <td>5/8" / 16mm</td>
+                    <td>3/4" / 19mm</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
         </div>
         <div class="bb-product-list-area">
 
@@ -119,14 +138,13 @@ layout: default
           <div class="col-12 col-sm-4 col-lg-6 col-xl-3">{% include product-card.html title="Product Name" %}</div> -->
         </div>
         <div class="bb-product-right">
-          <div class="col-12">{% include dealer-call-to-action.html size="small" %}</div>
+          <!-- <div class="col-12">{% include dealer-call-to-action.html size="small" %}</div> -->
 
           <div class="col-12"><h5 class="mt-5 mb-3">Gallery Examples</h5></div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-12">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" %}</div>
-          <div class="col-12 col-sm-6 col-md-6 col-lg-12">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>"%}</div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-12">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" img="commodore_smooth_10_1.jpg" %}</div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-12">{% include product-card.html title="Project Title" bricks="<li>Product Name</li><li>Product Name</li>" img="commodore_smooth_7108.jpg" %}</div>
           <div class="col-12 col-sm-6 col-md-6 col-lg-12"><a href="#" class="btn btn-secondary w-100 ">View Gallery</a></div>
 
-          <div class="col-12">{% include find-a-building.html size="small" %}</div>
         </div>
       </div>
     </div>

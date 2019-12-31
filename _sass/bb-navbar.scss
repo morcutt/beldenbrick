@@ -4,7 +4,7 @@
   transition: all .2s ease-out;
 }
 .bb-navbar {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid $steel-green-alpha-20;
 }
 
 @media (min-width: 992px){
@@ -21,30 +21,30 @@
   .bb-navbar {
     padding-top: $spacer * 1;
     padding-bottom: $spacer * 1;
-    background-color: rgba(255,255,255,.9) !important;
+    // background-color: rgba(255,255,255,.9) !important;
     z-index: 16;
     transition: all .2s ease-out;
-    .input-group {
-      input {
-          background: transparent;
-          color: $white;
-      }
-    }
+    // .input-group {
+    //   input {
+    //       background: transparent;
+    //       color: $white;
+    //   }
+    // }
     &.bb-navbar-start {
       padding-top: $spacer * 3;
       padding-bottom: $spacer * 2;
-      background-color: rgba(0,0,0,.4) !important;
-      color: #fff;
-      border-bottom: 0;
-      a.nav-link {
-        color: $gray-400;
-        &:hover {
-          color: $gray-500;
-        }
-      }
-      .active > a.nav-link {
-        color: $white;
-      }
+      // background-color: $deep-steel !important;
+      // color: #fff;
+      // border-bottom: 0;
+      // a.nav-link {
+      //   color: $gray-400;
+      //   &:hover {
+      //     color: $gray-500;
+      //   }
+      // }
+      // .active > a.nav-link {
+      //   color: $white;
+      // }
       .bb-navbar-aside {
         display: block;
         position: absolute;

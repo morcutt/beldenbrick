@@ -9,13 +9,16 @@
     function checkToolbarScroll() {
       let bbNavbarClass = document.getElementById('bb-navbar').classList;
       let bbLogoClass = document.getElementById('bb-logo').classList;
-      if(window.innerWidth >= 992 && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.6){
+      console.log(window.pageYOffset > 100);
+      //if(window.innerWidth >= 992 && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.6){
+      if(window.innerWidth >= 992 && window.pageYOffset > 75){
         if(bbNavbarStart){
           bbNavbarClass.remove("bb-navbar-start");
           bbLogoClass.remove('bb-logo-start');
           bbNavbarStart = false;
         };
-      }else if(window.innerWidth >= 992 && window.scrollY < document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+      //}else if(window.innerWidth >= 992 && window.scrollY < document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+      }else if(window.innerWidth >= 992 && window.pageYOffset < 1){
         if(!bbNavbarStart){
           bbNavbarClass.add("bb-navbar-start");
           bbLogoClass.add('bb-logo-start');

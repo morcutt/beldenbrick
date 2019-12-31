@@ -1,6 +1,10 @@
 
         <div class="card mb-3" >
+          {% if include.img != undefined %}
+          <img src="./assets/images/gallery/{{ include.img }}" class="card-img-top" alt="...">
+          {% else %}
           <img src="https://via.placeholder.com/200x150/666/555/?text=Placeholder+Image" class="card-img-top" alt="...">
+          {% endif %}
           <div class="card-body">
             <h6><a href="#" class="btn btn-text stretched-link">{{ include.title }}</a></h6>
             {% if include.bricks != undefined %}

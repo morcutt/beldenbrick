@@ -9,7 +9,8 @@
 </head>
 
 	<body>
-		    <nav id="bb-navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light bb-navbar bb-navbar-start">
+		
+    <nav id="bb-navbar" class="navbar sticky-top navbar-expand-lg bg-white navbar-light bb-navbar bb-navbar-start">
       <a href="#" class="navbar-brand py-0 mr-0" href="#">
         <svg id="bb-logo" class="bb-logo bb-logo-start" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.9 114.8" style="enable-background:new 0 0 460.9 114.8;" xml:space="preserve">
         	<g>
@@ -331,7 +332,7 @@
   </div>
 
 		
-    <div class="bb-footer py-5">
+    <div class="bb-footer mt-5">
       <div class="container-fluid">
         <div class="row pt-3">
           <div class="col-auto pt-3 mr-3">
@@ -473,13 +474,16 @@
     function checkToolbarScroll() {
       let bbNavbarClass = document.getElementById('bb-navbar').classList;
       let bbLogoClass = document.getElementById('bb-logo').classList;
-      if(window.innerWidth >= 992 && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.6){
+      console.log(window.pageYOffset > 100);
+      //if(window.innerWidth >= 992 && window.scrollY > document.getElementsByClassName('bb-hero')[0].offsetHeight*.6){
+      if(window.innerWidth >= 992 && window.pageYOffset > 75){
         if(bbNavbarStart){
           bbNavbarClass.remove("bb-navbar-start");
           bbLogoClass.remove('bb-logo-start');
           bbNavbarStart = false;
         };
-      }else if(window.innerWidth >= 992 && window.scrollY < document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+      //}else if(window.innerWidth >= 992 && window.scrollY < document.getElementsByClassName('bb-hero')[0].offsetHeight*.4){
+      }else if(window.innerWidth >= 992 && window.pageYOffset < 1){
         if(!bbNavbarStart){
           bbNavbarClass.add("bb-navbar-start");
           bbLogoClass.add('bb-logo-start');

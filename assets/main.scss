@@ -10,22 +10,20 @@
 @import "bb-select-color";
 @import "bb-featured";
 @import "bb-products";
-@import "bb-product-detail";
-@import "bb-gallery";
-@import "bb-gallery-detail";
+// @import "bb-product-detail";
+// @import "bb-gallery";
+// @import "bb-gallery-detail";
 @import "bb-product-facets";
 @import "bb-footer";
 
 
-.bb-ambient-paver {
-  background: url('./images/ambient-paver.svg');
-  background-size: cover;
-  background-position: center -8rem;
-  background-repeat: repeat-y;
-  // perspective: 2px;
-  background-attachment: fixed;
-  // transform: scale(1.1);
-}
+// .bb-ambient-paver {
+//   background: url('./images/ambient-paver.svg');
+//   background-size: cover;
+//   background-position: center -8rem;
+//   background-repeat: repeat-y;
+//   background-attachment: fixed;
+// }
 @media (min-width: 992px){
 
 }

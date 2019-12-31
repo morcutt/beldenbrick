@@ -1,17 +1,18 @@
 .bb-footer {
-  background-color: $tan;
-  background-image: url('./images/footer-brick.svg');
-  background-repeat: repeat-x;
+  background-color: $deep-steel;
+  color: #fff;
+  // background-image: url('./images/footer-brick.svg');
+  // background-repeat: repeat-x;
   .disclaimer {
     font-size: $font-size-sm;
   }
-  .row {
-    background: linear-gradient(0deg, rgba(236, 236, 228, 0.7) 50%, rgba(235, 236, 228, 0) 100%);
-  }
+  // .row {
+  //   background: linear-gradient(0deg, rgba(236, 236, 228, 0.7) 50%, rgba(235, 236, 228, 0) 100%);
+  // }
 }
 .bb-logo-footer {
   width: 10rem;
-  fill: $deep-steel;
+  fill: $white;
 }
 
 

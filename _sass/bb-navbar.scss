@@ -3,8 +3,12 @@
   fill: $primary;
   transition: all .2s ease-out;
 }
+.bb-logo135 {
+  display: none;
+  transition: all .75s ease-out;
+}
 .bb-navbar {
-  border-bottom: 1px solid $steel-green-alpha-20;
+  // border-bottom: 1px solid $steel-green-alpha-20;
 }
 
 @media (min-width: 992px){
@@ -16,6 +20,15 @@
       width: $spacer * 17;
       margin-top: -$spacer;
       fill: $primary;
+    }
+  }
+  .bb-logo135 {
+    display: block;
+    position: absolute;
+    top: -$spacer *25;
+    left: -$spacer;
+    &.bb-logo135-start {
+      top: 0;
     }
   }
   .bb-navbar {

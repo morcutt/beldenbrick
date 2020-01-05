@@ -19,6 +19,7 @@ $secondary: $tan;
 $link-color: $blue;
 
 $border-radius: 0rem;
+
 $h1-font-size:  $font-size-base * 6;
 $h2-font-size:  $font-size-base * 4;
 
@@ -27,6 +28,7 @@ $h2-font-size:  $font-size-base * 4;
 $steel-green: #646c6c;
 $deep-purple: #2c2c34;
 $deep-steel: rgba(44, 53, 57, 1);
+$deep-steel-alpha-90: rgba(44, 53, 57, .9);
 $deep-steel-alpha-50: rgba(44, 53, 57, .8);
 $steel-green-alpha-50: rgba(100, 108, 108, .5);
 $steel-green-alpha-20: rgba(100, 108, 108, .2);
@@ -36,6 +38,7 @@ $theme-colors: (
 );
 
 
+$body-color:  $deep-steel;
 $card-cap-bg: $white;
 // $component-active-bg: $tan;
 // $component-active-color: $deep-steel;

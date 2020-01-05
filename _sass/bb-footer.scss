@@ -1,5 +1,4 @@
 .bb-footer {
-  background-color: $deep-steel;
   color: #fff;
   // background-image: url('./images/footer-brick.svg');
   // background-repeat: repeat-x;
@@ -14,6 +13,8 @@
   width: 10rem;
   fill: $white;
 }
-
+.bg-dark-ish {
+  background-color: $deep-steel-alpha-90;
+}
 
 //<img src="./assets/images/footer-brick.svg" class="bb-footer-brick" >

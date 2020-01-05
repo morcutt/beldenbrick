@@ -45,11 +45,11 @@
 @media (min-width: 576px){
   .bb-select-color {
     flex-direction: row;
-    height: 15rem;
+    // height: 15rem;
   }
   .bb-color {
     flex-grow: 1;
-    height: 9rem;
+    height: 4rem;
     font-size: 1.4rem;
     position: relative;
     span {
@@ -60,13 +60,13 @@
       background-color: $deep-steel-alpha-50;
     }
   }
-  .bb-color:hover {
-    height: 11rem;
-    span {
-      margin-top: 0;
-      opacity: 1;
-    }
-  }
+  // .bb-color:hover {
+  //   height: 11rem;
+  //   span {
+  //     margin-top: 0;
+  //     opacity: 1;
+  //   }
+  // }
 }
 @media (min-width: 992px){
 

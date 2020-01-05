@@ -1,6 +1,10 @@
-
-    <nav id="bb-navbar" class="navbar sticky-top navbar-expand-lg bg-white navbar-light bb-navbar bb-navbar-start">
+<div class="sticky-top bg-white border-bottom">
+  <div class="container">
+    <nav id="bb-navbar" class="navbar navbar-expand-lg navbar-light bb-navbar bb-navbar-start">
       <a href="#" class="navbar-brand py-0 mr-0" href="#">
+        {% if page.name == "index.html" %}
+        <img id="bb-logo135" src="./assets/images/BB135.png" class="bb-logo135 bb-logo135-start" >
+        {% endif %}
         <svg id="bb-logo" class="bb-logo bb-logo-start" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 460.9 114.8" style="enable-background:new 0 0 460.9 114.8;" xml:space="preserve">
         	<g>
         		<path class="st0" d="M69.9,56.8c0.1,0.1,0.3,0.2,0.4,0.3c9.3,3.5,14.3,10.4,15.8,20c1.1,7.3,0.3,14.5-2.9,21.2
@@ -98,19 +102,16 @@
         <hr class="bb-navbar-divider" />
         <ul class="navbar-nav ml-auto mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Bricks <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Commercial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Residential</a>
+            <a class="nav-link" href="#">Brick <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Find a Distributor</a>
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Find a Dealor</a>
           </li>
         </ul>
         <hr class="bb-navbar-divider" />
@@ -142,3 +143,5 @@
         <hr class="bb-navbar-divider" />
       </div>
     </nav>
+  </div>
+</div>

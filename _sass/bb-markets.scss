@@ -8,13 +8,13 @@
   }
   &.bb-market-start {
     transform: translate(0, 30vh);
-    opacity: 0;   
+    opacity: 0;
   }
 }
-.bb-market:hover {
-  box-shadow: 0rem 3rem 3rem rgba(0,0,0,.1);
-  transform: scale(1.02);
-}
+// .bb-market:hover {
+//   box-shadow: 0rem 3rem 3rem rgba(0,0,0,.1);
+//   transform: scale(1.02);
+// }
 
 @media (min-width: 576px){
 

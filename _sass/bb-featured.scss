@@ -1,16 +1,3 @@
-.bb-market {
-  background: none;
-  border: none;
-  transition: all .5s ease-in-out;
-  .card-body {
-    background: $white;
-    border: 1px solid $gray-500;
-  }
-}
-.bb-market:hover {
-  box-shadow: 0rem 3rem 3rem rgba(0,0,0,.1);
-  transform: scale(1.02);
-}
 .bb-featured {
   display: inline-block;
   position: relative;

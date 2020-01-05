@@ -3,43 +3,144 @@ layout: default
 ---
 
   {% include homepageCarousel.html %}
-  <div class="bb-ambient-paver">
-    <div class="container" >
-      <div class="row justify-content-center py-5">
-        <div class="col-10 mb-3 col-sm-6 col-lg-5 mb-lg-0">
-          {% include market-card.html class="bb-market bb-market-start" content="Commercial" imgID="img1" image="./assets/images/featured/BeldInd817001.jpg" links='<li><i class="fa fa-image mx-1"></i> <a href="#">View Gallery</a></li><li><i class="fa fa-map-marker mx-2"></i> <a href="#">Buildings near me</a></li>' %}
+  <div class="container bb-market bb-market-start">
+    <h2 class="text-center mt-5">We have a brick for that</h2>
+    <h3 class="text-center mb-5">We have definatly been around the block. See for yourself.</h3>
+    <div class="d-md-flex flex-md-row-reverse align-items-stretch my-5">
+      <div class="flex-md-grow-0 d-md-flex flex-md-column justify-content-between p-5">
+        <div>
+          <h2>Commercial</h2>
+          <a href="#" class="btn btn-secondary my-3">View Gallery</a>
         </div>
-        <div class="col-10 mt-3 col-sm-6 col-lg-5 offset-lg-1 mt-sm-0">
-          {% include market-card.html class="bb-market bb-market-start" content="Residential" imgID="img2" image="./assets/images/featured/IMG_0246.JPG" links='<li><i class="fa fa-image mx-1"></i> <a href="#">View Gallery</a></li>' %}
-        </div>
-      </div>
-      <div class="d-flex flex-column text-center py-5">
-        {% include dealer-call-to-action.html size="large" %}
-      </div>
-    </div>
-    <div class="container-fluid px-5">
-      <div class="px-lg-5">
-      {% include select-color.html %}
-      <div class="bb-featured py-5">
-        <div class="bb-featured-dummy"></div>
-        <div class="bb-featured-display">
-          <div class="bb-featured-grid">
-            <div class="bb-featured-item bb-featured-item-1">{% include featured-card.html brick="vertical" title="Face Brick" image="./assets/images/featured/photo-2667-WebImage.jpg" %}</div>
-            <div class="bb-featured-item bb-featured-item-2">{% include featured-card.html brick="vertical" title="Thin Brick" image="./assets/images/featured/WheatfieldVelour-ModBelCali712007.jpg" %}</div>
-            <div class="bb-featured-item bb-featured-item-3">{% include featured-card.html brick="vertical" title="Oversized Brick" image="./assets/images/featured/image00024.JPG" %}</div>
-            <div class="bb-featured-item bb-featured-item-4">{% include featured-card.html brick="vertical" title="Structural" image="./assets/images/featured/NotreDameCrossroads04.jpg" %}</div>
-            <div class="bb-featured-item bb-featured-item-5">{% include featured-card.html brick="vertical" title="Pavers" image="./assets/images/featured/BeldenBelcrest530--47.jpg" %}</div>
-            <div class="bb-featured-item bb-featured-item-6">{% include featured-card.html brick="vertical" title="Special Shapes" image="./assets/images/featured/Garnetblendshapes.jpg" %}</div>
-            <div class="bb-featured-item bb-featured-item-7">{% include featured-card.html brick="vertical" title="Roman Brick" image="./assets/images/featured/BeldArchTN1019003.jpg" %}</div>
-            <div class="bb-featured-item bb-featured-item-8">{% include featured-card.html brick="vertical" title="Glazed Brick" image="./assets/images/featured/TheBearandTheButcherShamrockandLimeGreenGlazeIMG_9473.jpg" %}</div>
+        <div style="margin:0 0 -2rem;">
+          <h4>Or see it live!<br/>
+          Find a project near you</h4>
+          <div class="input-group input-group-lg mw-100 mt-3">
+            <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Search Catalog" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+            </div>
           </div>
         </div>
       </div>
+      <div class="flex-md-grow-1 d-md-flex flex-md-column p-1">
+        <div class="w-100 h-100 mb-1" style="background-image:url('./assets/images/featured/BeldInd817001.jpg');background-position:center;background-size:cover;">&nbsp;</div>
+        <div class="w-100 h-100 mt-1" style="background-image:url('./assets/images/featured/TheBearandTheButcherShamrockandLimeGreenGlazeIMG_9473.jpg');background-position:center;background-size:cover;">&nbsp;</div>
+      </div>
+      <div class="flex-md-grow-1 p-1">
+        <div class="w-100 h-100" style="background-image:url('./assets/images/featured/pavers.jpg');background-position:center;background-size:cover;min-height:400px">&nbsp;</div>
       </div>
     </div>
-    <div class="container" >
-      <div class="d-flex flex-column text-center py-5">
-        {% include find-a-building.html size="large" %}
+    <div class="d-md-flex align-items-stretch my-5">
+      <div class="flex-md-grow-0 d-md-flex flex-md-column justify-content-center p-5">
+         <div>
+          <h2>Residential</h2>
+          <a href="#" class="btn btn-secondary my-3">View Gallery</a>
+        </div>
+      </div>
+      <div class="flex-md-grow-1 d-md-flex flex-md-column p-1">
+        <div class="w-100 h-100 mb-1" style="background-image:url('./assets/images/featured/IMG_0246.JPG');background-position:center;background-size:cover;">&nbsp;</div>
+        <div class="w-100 h-100 mt-1" style="background-image:url('./assets/images/featured/TheBearandTheButcherShamrockandLimeGreenGlazeIMG_9473.jpg');background-position:center;background-size:cover;">&nbsp;</div>
+      </div>
+      <div class="flex-md-grow-1 p-1">
+        <div class="w-100 h-100" style="background-image:url('./assets/images/featured/BeldenBelcrest530--47.jpg');background-position:center;background-size:cover;min-height:400px">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div style="background:#6c757d;">
+    <div class="container p-5 my-5">
+      <div class="d-md-flex justify-content-around">
+        <form class="form-inline justify-content-center flex-md-grow-1">
+          <div class="input-group input-group-lg mw-100" style="width:30vw;">
+            <input type="text" class="form-control" placeholder="Enter your Zipcode" aria-label="Search Catalog" aria-describedby="button-addon2" style="font-size:2rem;">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+        <div class="flex-md-grow-1">
+          <h2 style="color:#fff;">Find a Dealer<br> Near You</h2>
+          <button class="btn btn-secondary" type="button" id="button-addon2">View All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-md-flex my-5" style="background:#ECECE4;">
+      <div class="flex-md-grow-0 d-md-flex flex-md-column justify-content-between p-5">
+
+          <div>
+            <h3>Explore Types</h3>
+            <h2>Pavers</h2>
+            <p>Complement and enhance with clay pavers.</p>
+            <a href="#" class="btn btn-primary my-3">Learn More</a>
+          </div>
+          <div style="margin:0 -3rem -2rem;">
+            <ul class="nav justify-content-center nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Face</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Thin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Oversized</a>
+              </li>
+            </ul>
+            <ul class="nav justify-content-center nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Structural</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="background:#fff;color:#333;" href="#">Pavers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Special Shapes</a>
+              </li>
+            </ul>
+            <ul class="nav justify-content-center nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Roman</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Glazed</a>
+              </li>
+            </ul>
+          </div>
+
+      </div>
+      <div class="flex-md-grow-1">
+        <div class="w-100 h-100 mb-1" style="background-image:url('./assets/images/featured/46379805264_23c76092f2_b.jpg');background-position:center;background-size:cover;min-height:500px;">&nbsp;</div>
+      </div>
+    </div>
+    <div class="d-md-flex flex-md-row-reverse  my-5" style="background:#ECECE4;">
+      <div class="flex-md-grow-0 d-md-flex flex-md-column justify-content-between p-5">
+        <div>
+          <h3>Explore Colors</h3>
+          <h2>Gray</h2>
+          <a href="#" class="btn btn-primary my-3">Explore Colors</a>
+          <a href="#" class="btn btn-primary my-3">Explore Glazed Colors</a>
+        </div>
+        <div style="margin:0 -3rem -3rem;">
+          <div class="bb-select-color">
+            <a href="#" class="bb-color bb-color-white"><span>White</span></a>
+            <a href="#" class="bb-color bb-color-cream"><span>Cream</span></a>
+            <a href="#" class="bb-color bb-color-gray" style="outline: 10px solid #fff;outline-offset: -12px;"><span>Gray</span></a>
+          </div>
+          <div class="bb-select-color">
+            <a href="#" class="bb-color bb-color-tan"><span>Tan</span></a>
+            <a href="#" class="bb-color bb-color-buff"><span>Buff</span></a>
+            <a href="#" class="bb-color bb-color-pink"><span>Pink</span></a>
+          </div>
+          <div class="bb-select-color">
+            <a href="#" class="bb-color bb-color-red"><span>Red</span></a>
+            <a href="#" class="bb-color bb-color-brown"><span>Brown</span></a>
+            <a href="#" class="bb-color bb-color-black"><span>Black</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-md-grow-1">
+        <div class="w-100 h-100 mb-1" style="background-image:url('./assets/images/featured/33144741538_6cc98d7394_o.jpg');background-position:center;background-size:cover;min-height:500px;">&nbsp;</div>
       </div>
     </div>
   </div>
